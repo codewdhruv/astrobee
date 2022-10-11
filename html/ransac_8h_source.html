@@ -218,8 +218,8 @@ $(document).ready(function(){initNavTree('ransac_8h_source.html',''); initResiza
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;          <span class="keywordflow">if</span> (!m_reduce_min_num_output_inliers_if_no_fit)</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;          <a class="code" href="classsparse__mapping_1_1RandomSampleConsensus.html#a46adec3e51b9dbd36305ce72d96f895f">reduce_min_num_output_inliers</a>();</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;           <span class="comment">// Can&#39;t possibly compute a transform with 1 or 0 samples!</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;          <span class="keywordflow">if</span> (m_min_num_output_inliers &lt; 2)</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;          <span class="comment">// A similarity transform needs at least 3 samples</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;          <span class="keywordflow">if</span> (m_min_num_output_inliers &lt; 3)</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;          LOG(INFO) &lt;&lt; <span class="stringliteral">&quot;Attempting RANSAC with &quot;</span> &lt;&lt; m_min_num_output_inliers</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                    &lt;&lt; <span class="stringliteral">&quot; output inliers.\n&quot;</span>;</div>
