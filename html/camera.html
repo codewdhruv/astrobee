@@ -94,10 +94,14 @@ $(document).ready(function(){initNavTree('camera.html',''); initResizable(); });
 <div class="textblock"><p>This library handles camera calibration parameters and transformations, providing functions to handle between undistorted and distorted coordinate frames, and other helper functions to deal with reading and applying camera transformations.</p>
 <p>A tool named undistort_image is provided that can undistort (and optionally crop) a given set of images.</p>
 <p>The undistorted image dimensions, as well as the focal length and undistorted optical center will be displayed on the screen.</p>
-<p>Usage:</p>
-<p>export ASTROBEE_RESOURCE_DIR=$SOURCE_PATH/astrobee/resources export ASTROBEE_CONFIG_DIR=$SOURCE_PATH/astrobee/config export ASTROBEE_WORLD=granite export ASTROBEE_ROBOT=p4d</p>
-<p>undistort_image input_dir/*[0-9].jpg &ndash;output_directory output_dir \ &ndash;robot_camera nav_cam</p>
-<p>Options:</p>
+<p>Usage: </p><pre class="fragment">export ASTROBEE_RESOURCE_DIR=$SOURCE_PATH/astrobee/resources
+export ASTROBEE_CONFIG_DIR=$SOURCE_PATH/astrobee/config
+export ASTROBEE_WORLD=granite
+export ASTROBEE_ROBOT=p4d
+
+undistort_image input_dir/*[0-9].jpg --output_directory output_dir \
+  --robot_camera nav_cam
+</pre><p>Options:</p>
 <p>&ndash;image_list: A file having the list of images to undistort, one per line. If not specified it is assumed they are passed in directly on the command line.</p>
 <p>&ndash;output_directory: Output directory. If not specified, undistorted images will saved in the same directory as the inputs.</p>
 <p>&ndash;scale: Undistort images at different resolution, with their width being a multiple of this scale compared to the camera model. The default is 1.</p>
