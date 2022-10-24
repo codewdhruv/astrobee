@@ -143,17 +143,21 @@ Set Planner</h3>
 Get Planner</h3>
 <p>This flag is used to display the current planner. If you want to see the planner being used, please run: </p><pre class="fragment">rosrun executive teleop_tool -get_planner
 </pre><h3><a class="anchor" id="autotoc_md491"></a>
+Set Check Zones</h3>
+<p>This flag is used to tell the robot if it should check the keepin and keepout zones. By default, the robot checks them before performing a motion. If you are having trouble with the keepin/keepout zones in simulation, try turning this off. To turn it off, run: </p><pre class="fragment">rosrun executive teleop_tool -set_check_zones "off"
+</pre><p>To turn check zones back on, please run: </p><pre class="fragment">rosrun executive teleop_tool -set_check_zones "on"
+</pre><h3><a class="anchor" id="autotoc_md492"></a>
 Set Face Forward</h3>
 <p>This flag is used to tell the robot to fly in face forward mode. By default, the robot flies in face forward mode meaning the robot will turn towards the point it is navigating to before flying. If face foward mode is turned off, the robot will not turn towards the point it is navigating to or in other words, the robot will fly blind. If there is an object in the robot's path, the robot will collide with it so please use this flag with caution. To turn face forward off, run: </p><pre class="fragment">rosrun executive teleop_tool -set_face_forward "off"
 </pre><p>To turn face forward back on, please run: </p><pre class="fragment">rosrun executive teleop_tool -set_face_forward "on"
-</pre><h3><a class="anchor" id="autotoc_md492"></a>
+</pre><h3><a class="anchor" id="autotoc_md493"></a>
 Get Face Forward</h3>
 <p>This flag is used to display the current state of face forward mode. To see if Astrobee is current flying face forward, please run: </p><pre class="fragment">rosrun executive teleop_tool -get_face_forward
-</pre><h3><a class="anchor" id="autotoc_md493"></a>
+</pre><h3><a class="anchor" id="autotoc_md494"></a>
 Set Operating Limits</h3>
 <p>This flag is used to set the operating limits. If you set the operating limits incorrectly, Astrobee may be unable to move. If you want to set the operating limits, we recommend looking at the flight modes so you know what the upper/hard limits for the flight modes are. The flight modes can be found in the world config files which can be found in <code>astrobee/config/worlds/</code>. Please note that the mode must match the name of one our flight modes. Also note, there are docking, undocking, perching and unperching flight modes. You DO NOT need to set these modes before you dock, undock, perch, or unperch; the flight software does this for you. If you want to use nominal mode but you want the target velocities and accelerations to be half the hard limits, run: </p><pre class="fragment">rosrun executive teleop_tool -set_op_limits -mode "nominal" -vel 0.1 -accel 0.01 -omega 0.08725 -alpha 0.08725 -collision_distance 0.25
 </pre><p>If you want to push astrobee to the max, you can try to use the hard limits for difficult mode. This may not work and may result in tolerance violations when trying to move Astrobee. To do this, run: </p><pre class="fragment">rosrun executive teleop_tool -set_op_limits -mode "difficult" -vel 0.4 -accel 0.0400 -omega 0.5236 -alpha 0.5236 -collision_distance 0.25
-</pre><h3><a class="anchor" id="autotoc_md494"></a>
+</pre><h3><a class="anchor" id="autotoc_md495"></a>
 Get Operating Limits</h3>
 <p>This flag is used to display the current operating limits. To use it, run: </p><pre class="fragment">rosrun executive teleop_tool -get_op_limits
 </pre> </div></div><!-- contents -->

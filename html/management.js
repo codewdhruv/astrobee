@@ -14,22 +14,22 @@ var management =
     ] ],
     [ "Image Sampler", "imagesampler.html", null ],
     [ "System Monitor", "sys_monitor.html", [
-      [ "Startup", "sys_monitor.html#autotoc_md499", null ],
-      [ "Fault responses", "sys_monitor.html#autotoc_md500", null ],
-      [ "Triggering Faults", "sys_monitor.html#autotoc_md501", null ],
-      [ "Clear faults", "sys_monitor.html#autotoc_md502", null ],
-      [ "Blocking faults", "sys_monitor.html#autotoc_md503", null ],
-      [ "Fault table", "sys_monitor.html#autotoc_md504", [
+      [ "Startup", "sys_monitor.html#autotoc_md500", null ],
+      [ "Fault responses", "sys_monitor.html#autotoc_md501", null ],
+      [ "Triggering Faults", "sys_monitor.html#autotoc_md502", null ],
+      [ "Clear faults", "sys_monitor.html#autotoc_md503", null ],
+      [ "Blocking faults", "sys_monitor.html#autotoc_md504", null ],
+      [ "Fault table", "sys_monitor.html#autotoc_md505", [
         [ "Usage", "config_reader.html#autotoc_md191", null ],
-        [ "Image Sampler Node", "imagesampler.html#autotoc_md495", [
-          [ "Configure the image sampler for the desired camera", "imagesampler.html#autotoc_md496", null ],
-          [ "Enable the image sampler for the desired camera", "imagesampler.html#autotoc_md497", null ]
+        [ "Image Sampler Node", "imagesampler.html#autotoc_md496", [
+          [ "Configure the image sampler for the desired camera", "imagesampler.html#autotoc_md497", null ],
+          [ "Enable the image sampler for the desired camera", "imagesampler.html#autotoc_md498", null ]
         ] ],
-        [ "Entries", "sys_monitor.html#autotoc_md505", null ],
-        [ "Responses", "sys_monitor.html#autotoc_md506", null ]
+        [ "Entries", "sys_monitor.html#autotoc_md506", null ],
+        [ "Responses", "sys_monitor.html#autotoc_md507", null ]
       ] ]
     ] ],
     [ "Log Monitor", "log_monitor.html", [
-      [ "Startup", "log_monitor.html#autotoc_md498", null ]
+      [ "Startup", "log_monitor.html#autotoc_md499", null ]
     ] ]
 ];
