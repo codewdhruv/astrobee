@@ -1,10 +1,6 @@
 var NAVTREEINDEX3 =
 {
-"theia_map.html#autotoc_md443":[5,2,17,6,6],
-"theia_map.html#autotoc_md444":[5,2,17,6,7],
-"tools.html":[8],
-"total_station.html":[5,2,17,3],
-"total_station.html#autotoc_md445":[5,2,17,3,0],
+"total_station.html#autotoc_md442":[5,2,17,3,0],
 "urdf.html":[5,7],
 "using_telemetry.html":[3,11],
 "using_telemetry.html#autotoc_md167":[0],
@@ -23,13 +19,13 @@ var NAVTREEINDEX3 =
 "using_telemetry.html#autotoc_md180":[7,1],
 "using_telemetry.html#autotoc_md181":[7,2],
 "visioncommon.html":[5,2,18],
-"visioncommon.html#autotoc_md446":[5,2,18,0],
-"visioncommon.html#autotoc_md447":[0],
-"visioncommon.html#autotoc_md448":[1],
-"visioncommon.html#autotoc_md449":[2],
+"visioncommon.html#autotoc_md443":[5,2,18,0],
+"visioncommon.html#autotoc_md444":[0],
+"visioncommon.html#autotoc_md445":[1],
+"visioncommon.html#autotoc_md446":[2],
 "vive.html":[5,8,10],
 "vive_localization.html":[5,2,19],
-"vive_localization.html#autotoc_md450":[5,2,19,0],
-"vive_localization.html#autotoc_md451":[5,2,19,1],
-"vive_localization.html#autotoc_md452":[5,2,19,2]
+"vive_localization.html#autotoc_md447":[5,2,19,0],
+"vive_localization.html#autotoc_md448":[5,2,19,1],
+"vive_localization.html#autotoc_md449":[5,2,19,2]
 };

@@ -171,8 +171,10 @@ Include dependency graph for import_map.cc:</div>
 Functions</h2></td></tr>
 <tr class="memitem:a48f49688f39edf3ff37be02a05a35838"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="import__map_8cc.html#a48f49688f39edf3ff37be02a05a35838">DEFINE_string</a> (input_map, &quot;&quot;, &quot;Input map created with undistorted images, in a text file.&quot;)</td></tr>
 <tr class="separator:a48f49688f39edf3ff37be02a05a35838"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a973bd065823828f18fb9707010f4b9f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="import__map_8cc.html#a973bd065823828f18fb9707010f4b9f7">DEFINE_string</a> (output_map, &quot;output.map&quot;, &quot;Output sparse map as expected by Astrobee software.&quot;)</td></tr>
-<tr class="separator:a973bd065823828f18fb9707010f4b9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0335ae466aa2947c643df9650e04df6f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="import__map_8cc.html#a0335ae466aa2947c643df9650e04df6f">DEFINE_string</a> (output_map, &quot;&quot;, &quot;Output sparse map as expected by Astrobee software.&quot;)</td></tr>
+<tr class="separator:a0335ae466aa2947c643df9650e04df6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d8cbbed836ce39cb09e9cc21e2f554f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="import__map_8cc.html#a0d8cbbed836ce39cb09e9cc21e2f554f">DEFINE_bool</a> (no_shift, false, &quot;Import the features without shifting them relative to the optical center.&quot;)</td></tr>
+<tr class="separator:a0d8cbbed836ce39cb09e9cc21e2f554f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89c2e92e4fc8d1f053be8c6564c9337e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="import__map_8cc.html#a89c2e92e4fc8d1f053be8c6564c9337e">DEFINE_bool</a> (bundler_map, false, &quot;If true, read the Bundler format. This will be ignored for input .nvm files.&quot;)</td></tr>
 <tr class="separator:a89c2e92e4fc8d1f053be8c6564c9337e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace657161f8f0a8c3483a1d647c3b6fe8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="import__map_8cc.html#ace657161f8f0a8c3483a1d647c3b6fe8">DEFINE_string</a> (undistorted_camera_params, &quot;&quot;, &quot;Intrinsics of the undistorted camera. Not needed if --distorted_images_list &quot; &quot;is specified, as then the camera is set via ASTROBEE_ROBOT. Specify as: &quot; &quot;'wid_x wid_y focal_len opt_ctr_x opt_ctr_y'.&quot;)</td></tr>
@@ -186,7 +188,7 @@ Functions</h2></td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a89c2e92e4fc8d1f053be8c6564c9337e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89c2e92e4fc8d1f053be8c6564c9337e">&#9670;&nbsp;</a></span>DEFINE_bool()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a89c2e92e4fc8d1f053be8c6564c9337e">&#9670;&nbsp;</a></span>DEFINE_bool() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -213,6 +215,40 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">read the Bundler format. This will be ignored for input .nvm files.&quot;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d8cbbed836ce39cb09e9cc21e2f554f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d8cbbed836ce39cb09e9cc21e2f554f">&#9670;&nbsp;</a></span>DEFINE_bool() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DEFINE_bool </td>
+          <td>(</td>
+          <td class="paramtype">no_shift&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">false&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;Import the features without shifting them relative to the optical center.&quot;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -299,8 +335,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a973bd065823828f18fb9707010f4b9f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a973bd065823828f18fb9707010f4b9f7">&#9670;&nbsp;</a></span>DEFINE_string() <span class="overload">[3/5]</span></h2>
+<a id="a0335ae466aa2947c643df9650e04df6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0335ae466aa2947c643df9650e04df6f">&#9670;&nbsp;</a></span>DEFINE_string() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -314,7 +350,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&quot;output.map&quot;&#160;</td>
+          <td class="paramtype">&quot;&quot;&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>

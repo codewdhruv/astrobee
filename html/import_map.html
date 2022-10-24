@@ -91,21 +91,23 @@ $(document).ready(function(){initNavTree('import_map.html',''); initResizable();
 <div class="title">Importing a map in .nvm format </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="autotoc_md407"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md401"></a>
 Overview</h1>
 <p>The <code>import_map</code> tool is used to import a map from the NVM format, which Theia and other SfM packages export to, to Astrobee's .map format. The <a class="el" href="export_map.html">Exporting a map to the .nvm format</a> program does the reverse operation.</p>
 <p>It is assumed that the NVM map was built with nav_cam images, which were either undistorted or distorted (original ones), and that the name of the robot which acquired the images is known.</p>
 <p>In either case, the NVM file does not store descriptors, so a map needs to be rebuilt after it is imported.</p>
-<h1><a class="anchor" id="autotoc_md408"></a>
+<h1><a class="anchor" id="autotoc_md402"></a>
 Import an nvm map made with distorted images</h1>
 <p>Run: </p><pre class="fragment">export ASTROBEE_ROBOT=bumble
 astrobee/devel/lib/sparse_mapping/import_map \
   -input_map map.nvm -output_map map.map
-</pre><p>See further down about how to rebuild the imported map.</p>
-<h1><a class="anchor" id="autotoc_md409"></a>
+</pre><p>The nvm file normally stores distorted interest points which are shifted relative to the optical center. The import operation unshifts these points, undistorts them, and shifts them relative to unidstored image center, per Astrobee sparse map conventions.</p>
+<p>If the interest points are saved with no shift relative to the optical center (such as done by <code>export_map -no_shift), then invoke on importing the</code>-no_shift`` option as well. The rest of the operations, of undistortion and shifting relative to the undistorted image center will still take place.</p>
+<p>See further down about how to rebuild the imported map.</p>
+<h1><a class="anchor" id="autotoc_md403"></a>
 Import an nvm map made with undistorted images</h1>
 <p>There are two cases to consider.</p>
-<h2><a class="anchor" id="autotoc_md410"></a>
+<h2><a class="anchor" id="autotoc_md404"></a>
 Keep, after importing, the undistorted images and camera model</h2>
 <p>Run: </p><pre class="fragment">export ASTROBEE_ROBOT=bumble
 astrobee/devel/lib/sparse_mapping/import_map                             \
@@ -114,7 +116,7 @@ astrobee/devel/lib/sparse_mapping/import_map                             \
   -input_map map.nvm -output_map map.map
 </pre><p>It is very important that the robot name be specified corretly.</p>
 <p>It is assumed that the images were acquired with the nav camera of the robot given by $ASTROBEE_ROBOT and undistorted with the Astrobee program <code>undistort_image</code>. The undistorted camera parameters to use should be as printed on the screen (and saved to disk) by <code>undistort_image</code>.</p>
-<h2><a class="anchor" id="autotoc_md411"></a>
+<h2><a class="anchor" id="autotoc_md405"></a>
 Replace with distorted data</h2>
 <p>If desired to replace on importing the undistorted images with the original distorted ones, and same for the camera parameters, as it is usually expected of a sparse map, the above command should be called instead as: </p><pre class="fragment">export ASTROBEE_ROBOT=bumble
 astrobee/devel/lib/sparse_mapping/import_map \
@@ -124,7 +126,7 @@ astrobee/devel/lib/sparse_mapping/import_map \
 </pre><p>Here, the files <code>undist_list.txt</code> and <code>dist_list.txt</code> must have one image per line and be in one-to-one correspondence. It is important that both undistorted and distorted images be specified, as the former are needed to look up camera poses and other data in the .nvm file before being replaced with the distorted ones.</p>
 <p>This use case was tested only with a map exported by Theia, which records the images without a directory path, so that is how they should be specified in the undistorted image list as well.</p>
 <p>It is very important to note that the interest point matches will not be correct, as they are left undistorted. Only the image names, robot camera parameters, and camera poses will be accurate. So, this map should be rebuilt right away.</p>
-<h1><a class="anchor" id="autotoc_md412"></a>
+<h1><a class="anchor" id="autotoc_md406"></a>
 Rebuilding an imported map</h1>
 <p>To rebuild an imported map while keeping the camera poses read from the nvm file, run: </p><pre class="fragment">export ASTROBEE_ROBOT=bumble
 build_map -rebuild -rebuild_detector SURF \

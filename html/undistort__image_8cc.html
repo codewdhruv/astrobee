@@ -157,22 +157,94 @@ Functions</h2></td></tr>
 <tr class="separator:abd8ea8275e6df43b64eedfb0b958b71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1fb8225e247cebdd66e39ef15b3643a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="undistort__image_8cc.html#ab1fb8225e247cebdd66e39ef15b3643a">DEFINE_string</a> (undistorted_intrinsics, &quot;&quot;, &quot;Save to this file the undistorted camera intrinsics.&quot;)</td></tr>
 <tr class="separator:ab1fb8225e247cebdd66e39ef15b3643a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f84ba42a65db1cae57299ef802cba5c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="undistort__image_8cc.html#a4f84ba42a65db1cae57299ef802cba5c">DEFINE_double</a> (scale, 1.0, &quot;Undistort images at different resolution, with their width &quot; &quot;being a multiple of this scale compared to the camera model.&quot;)</td></tr>
-<tr class="separator:a4f84ba42a65db1cae57299ef802cba5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe4bf237bdf3a31b9756c14d50659857"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="undistort__image_8cc.html#afe4bf237bdf3a31b9756c14d50659857">DEFINE_string</a> (undistorted_crop_win, &quot;&quot;, &quot;After undistorting, apply a crop window of these dimensions &quot; &quot;centered at the undistorted image center. The adjusted &quot; &quot;dimensions and optical center will be printed on screen. &quot; &quot;Specify as: 'crop_x crop_y'.&quot;)</td></tr>
-<tr class="separator:afe4bf237bdf3a31b9756c14d50659857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae3dc0691703140cd6b1f286ebfbf8c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="undistort__image_8cc.html#aae3dc0691703140cd6b1f286ebfbf8c4">DEFINE_string</a> (scale, &quot;auto&quot;, &quot;Undistort images at different resolution, with their width &quot; &quot;being a multiple of this scale compared to the camera model. Or set to &quot; &quot;'auto' to select the integer scale factor based on the image size.&quot;)</td></tr>
+<tr class="separator:aae3dc0691703140cd6b1f286ebfbf8c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84973f5208fc0f12c80e50df69aee46d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="undistort__image_8cc.html#a84973f5208fc0f12c80e50df69aee46d">DEFINE_string</a> (undistorted_crop_win, &quot;&quot;, &quot;After undistorting, apply a crop window of these dimensions &quot; &quot;centered at the undistorted image center. The adjusted &quot; &quot;dimensions and optical center will be printed on screen. &quot; &quot;Specify as: 'crop_x crop_y'. Or specify 'loose' to use the &quot; &quot;smallest crop window that contains all of the  &quot; &quot;undistorted source pixels and keeps the optical center &quot; &quot;centered.&quot;)</td></tr>
+<tr class="separator:a84973f5208fc0f12c80e50df69aee46d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4d25577d3f4a0e48365827cb5295926"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="undistort__image_8cc.html#aa4d25577d3f4a0e48365827cb5295926">DEFINE_bool</a> (save_bgr, false, &quot;Save the undistorted images as BGR instead of grayscale. (Some tools expect BGR.)&quot;)</td></tr>
 <tr class="separator:aa4d25577d3f4a0e48365827cb5295926"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ddf5e8c900ecb606b055a6ff0b23521"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="undistort__image_8cc.html#a5ddf5e8c900ecb606b055a6ff0b23521">DEFINE_bool</a> (<a class="el" href="interest__points__test__bag_8cc.html#a48f829c48f848ca0e196d73da88d99c2">histogram_equalization</a>, false, &quot;If true, do histogram equalization.&quot;)</td></tr>
 <tr class="separator:a5ddf5e8c900ecb606b055a6ff0b23521"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c783c120e8fe2aeb66392b746211df4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="undistort__image_8cc.html#a9c783c120e8fe2aeb66392b746211df4">DEFINE_string</a> (robot_camera, &quot;nav_cam&quot;, &quot;Which of bot's cameras to use. Tested with nav_cam and sci_cam.&quot;)</td></tr>
 <tr class="separator:a9c783c120e8fe2aeb66392b746211df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad94c07e82217dd8af1b0ec3fc06c894f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="undistort__image_8cc.html#ad94c07e82217dd8af1b0ec3fc06c894f">DEFINE_bool</a> (alpha, false, &quot;Add an alpha channel and make areas outside the remapped input transparent. Forces PNG output format. Not &quot; &quot;compatible with save_bgr.&quot;)</td></tr>
+<tr class="separator:ad94c07e82217dd8af1b0ec3fc06c894f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0be2a2d507d9a8748bf179919d258f67"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="undistort__image_8cc.html#a0be2a2d507d9a8748bf179919d258f67">DEFINE_bool</a> (cubic, false, &quot;Use more expensive cubic interpolation for best image quality.&quot;)</td></tr>
+<tr class="separator:a0be2a2d507d9a8748bf179919d258f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="undistort__image_8cc.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
 <tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ad94c07e82217dd8af1b0ec3fc06c894f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad94c07e82217dd8af1b0ec3fc06c894f">&#9670;&nbsp;</a></span>DEFINE_bool() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DEFINE_bool </td>
+          <td>(</td>
+          <td class="paramtype">alpha&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">false&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;Add an alpha channel and make areas outside the remapped input transparent. Forces PNG output format. Not &quot; &quot;compatible with save_bgr.&quot;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0be2a2d507d9a8748bf179919d258f67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0be2a2d507d9a8748bf179919d258f67">&#9670;&nbsp;</a></span>DEFINE_bool() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DEFINE_bool </td>
+          <td>(</td>
+          <td class="paramtype">cubic&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">false&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;Use more expensive cubic interpolation for best image quality.&quot;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5ddf5e8c900ecb606b055a6ff0b23521"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ddf5e8c900ecb606b055a6ff0b23521">&#9670;&nbsp;</a></span>DEFINE_bool() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ddf5e8c900ecb606b055a6ff0b23521">&#9670;&nbsp;</a></span>DEFINE_bool() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -212,7 +284,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="aa4d25577d3f4a0e48365827cb5295926"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4d25577d3f4a0e48365827cb5295926">&#9670;&nbsp;</a></span>DEFINE_bool() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4d25577d3f4a0e48365827cb5295926">&#9670;&nbsp;</a></span>DEFINE_bool() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -245,48 +317,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4f84ba42a65db1cae57299ef802cba5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f84ba42a65db1cae57299ef802cba5c">&#9670;&nbsp;</a></span>DEFINE_double()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">DEFINE_double </td>
-          <td>(</td>
-          <td class="paramtype">scale&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">1.&#160;</td>
-          <td class="paramname"><em>0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&quot;Undistort images at different&#160;</td>
-          <td class="paramname"><em>resolution</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">with their width &quot; &quot;being a multiple of this scale compared to the camera model.&quot;&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="af1a3a8aed4236cb1a52f65c72054a758"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1a3a8aed4236cb1a52f65c72054a758">&#9670;&nbsp;</a></span>DEFINE_string() <span class="overload">[1/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af1a3a8aed4236cb1a52f65c72054a758">&#9670;&nbsp;</a></span>DEFINE_string() <span class="overload">[1/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -332,7 +364,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a1fef1ba351fd2b21bae77cef5e6d21c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fef1ba351fd2b21bae77cef5e6d21c7">&#9670;&nbsp;</a></span>DEFINE_string() <span class="overload">[2/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fef1ba351fd2b21bae77cef5e6d21c7">&#9670;&nbsp;</a></span>DEFINE_string() <span class="overload">[2/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -372,7 +404,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="abd8ea8275e6df43b64eedfb0b958b71c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd8ea8275e6df43b64eedfb0b958b71c">&#9670;&nbsp;</a></span>DEFINE_string() <span class="overload">[3/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abd8ea8275e6df43b64eedfb0b958b71c">&#9670;&nbsp;</a></span>DEFINE_string() <span class="overload">[3/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -412,7 +444,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a9c783c120e8fe2aeb66392b746211df4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c783c120e8fe2aeb66392b746211df4">&#9670;&nbsp;</a></span>DEFINE_string() <span class="overload">[4/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c783c120e8fe2aeb66392b746211df4">&#9670;&nbsp;</a></span>DEFINE_string() <span class="overload">[4/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -445,8 +477,48 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afe4bf237bdf3a31b9756c14d50659857"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe4bf237bdf3a31b9756c14d50659857">&#9670;&nbsp;</a></span>DEFINE_string() <span class="overload">[5/6]</span></h2>
+<a id="aae3dc0691703140cd6b1f286ebfbf8c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae3dc0691703140cd6b1f286ebfbf8c4">&#9670;&nbsp;</a></span>DEFINE_string() <span class="overload">[5/7]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DEFINE_string </td>
+          <td>(</td>
+          <td class="paramtype">scale&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;auto&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;Undistort images at different&#160;</td>
+          <td class="paramname"><em>resolution</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">with their width &quot; &quot;being a multiple of this scale compared to the camera model. Or set to &quot; &quot; 'auto' to select the integer scale factor based on the image size.&quot;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a84973f5208fc0f12c80e50df69aee46d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84973f5208fc0f12c80e50df69aee46d">&#9670;&nbsp;</a></span>DEFINE_string() <span class="overload">[6/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -472,7 +544,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">apply a crop window of these dimensions &quot; &quot;centered at the undistorted image center. The adjusted &quot; &quot;dimensions and optical center will be printed on screen. &quot; &quot;Specify as:'crop_x crop_y'.&quot;&#160;</td>
+          <td class="paramtype">apply a crop window of these dimensions &quot; &quot;centered at the undistorted image center. The adjusted &quot; &quot;dimensions and optical center will be printed on screen. &quot; &quot;Specify as:'crop_x crop_y'. Or specify 'loose' to use the &quot; &quot;smallest crop window that contains all of the &quot; &quot;undistorted source pixels and keeps the optical center &quot; &quot;centered.&quot;&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -486,7 +558,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ab1fb8225e247cebdd66e39ef15b3643a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1fb8225e247cebdd66e39ef15b3643a">&#9670;&nbsp;</a></span>DEFINE_string() <span class="overload">[6/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1fb8225e247cebdd66e39ef15b3643a">&#9670;&nbsp;</a></span>DEFINE_string() <span class="overload">[7/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
