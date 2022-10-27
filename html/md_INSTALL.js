@@ -1,6 +1,6 @@
 var md_INSTALL =
 [
-    [ "Quick start using the Astrobee Docker image", "md_INSTALL.html#autotoc_md8", null ],
+    [ "Quick start using the remote Astrobee docker images", "md_INSTALL.html#autotoc_md8", null ],
     [ "Building the code natively", "md_INSTALL.html#autotoc_md9", [
       [ "About", "index.html#autotoc_md1", null ],
       [ "Usage", "index.html#autotoc_md2", null ],
@@ -11,7 +11,7 @@ var md_INSTALL =
       [ "Non-NASA users", "md_INSTALL.html#autotoc_md10", null ],
       [ "NASA users", "md_INSTALL.html#autotoc_md11", null ]
     ] ],
-    [ "Using Docker", "md_INSTALL.html#autotoc_md12", null ],
+    [ "Developing using Docker", "md_INSTALL.html#autotoc_md12", null ],
     [ "Install for general users", "install-nonNASA.html", [
       [ "Usage instructions for non-NASA users", "install-nonNASA.html#autotoc_md115", [
         [ "Machine setup", "install-nonNASA.html#autotoc_md116", [

@@ -92,15 +92,15 @@ $(document).ready(function(){initNavTree('md_INSTALL.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="autotoc_md8"></a>
-Quick start using the Astrobee Docker image</h1>
-<p><em>The following has been tested on native (non-VM) Ubuntu systems using X11 (the default). Please see <a href="http://wiki.ros.org/docker/Tutorials#Tooling_with_Docker">these ROS pages</a> for more resources.</em></p>
-<p>If you just want to try out the astrobee simulator, you can use one of the Docker images in the <a href="https://github.com/nasa/astrobee/pkgs/container/astrobee">Github Container Registry</a>.</p>
+Quick start using the remote Astrobee docker images</h1>
+<p><em>The following has been tested on native Ubuntu systems using X11 (the default). Please see <a href="http://wiki.ros.org/docker/Tutorials#Tooling_with_Docker">these ROS pages</a> for more resources.</em></p>
 <p>Make sure you have Docker installed in your Ubuntu system following the <a href="https://docs.docker.com/engine/install/ubuntu/">installation instructions</a> and <a href="https://docs.docker.com/engine/install/linux-postinstall/">post-installation steps for Linux</a>.</p>
 <p>For some systems (with discrete graphics cards), you may need to install <a href="http://wiki.ros.org/docker/Tutorials/Hardware%20Acceleration">additional software</a>.</p>
 <div class="fragment"><div class="line">git clone https://github.com/nasa/astrobee.git</div>
 <div class="line">cd astrobee</div>
 <div class="line">./scripts/docker/run.sh --remote</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md9"></a>
+</div><!-- fragment --><p>For more options, see: install-docker.</p>
+<h1><a class="anchor" id="autotoc_md9"></a>
 Building the code natively</h1>
 <p>There are different ways to build and test the code.</p>
 <h2><a class="anchor" id="autotoc_md10"></a>
@@ -112,8 +112,9 @@ NASA users</h2>
 <p>If you are a NASA user and want to install the cross-compiler for robot testing follow these instructions:</p>
 <p><a class="el" href="install-NASA.html">Install for NASA users</a></p>
 <h1><a class="anchor" id="autotoc_md12"></a>
-Using Docker</h1>
+Developing using Docker</h1>
 <p>Docker builds are available for Ubuntu 16.04, 18.04 and 20.04.</p>
+<p>We recommend using Visual Studio Code Dev Containers extension that allows usage of a Docker container as a full-featured development environment. When you open the astrobee folder on vscode the prompt will show up to launch the dev container automatically.</p>
 <p>Instructions on how to build the images natively and run the containers are in:</p>
 <p>install-docker </p>
 </div></div><!-- contents -->
