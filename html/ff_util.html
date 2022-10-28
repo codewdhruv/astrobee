@@ -125,7 +125,7 @@ Actions (ff_action)</h1>
 <ul>
 <li><code>Goal</code> - A message sent from the client to the server containing instructions.</li>
 <li><code>Feedback</code> - Information sent periodically from the server to client containing progress data.</li>
-<li><code>Result</code> - The final result of the action, as well as any final data.</li>
+<li><code><a class="el" href="structResult.html">Result</a></code> - The final result of the action, as well as any final data.</li>
 </ul>
 <p>Despite their numerous advantages, there are several drawbacks with ROS actions. Firstly, there is no timeout management for connecting to a service, sending goals, receiving feedback or a result. Secondly, their constructor assumes the existence of an active ROS handle, so they cannot be use as member variables on a nodelet without a segmentation fault occurring. Fixing these deficiencies on a per-use basis requires substantial boilerplate code.</p>
 <p>The FreeFlyerActionClient and FreeFlyerActionServer classes are essentially wrapper aroud ROS simple action client and servers respectively, providing fixes to the problems above in a reusable way.</p>

@@ -51,7 +51,7 @@ var sparsemapping =
         ] ],
         [ "Summary", "map_building.html#autotoc_md345", null ],
         [ "Setup the environment", "map_building.html#autotoc_md347", null ],
-        [ "Reduce the number of images", "map_building.html#autotoc_md348", null ],
+        [ "Reduce the number of images and remove images that might cause errors during bundle-adjustment", "map_building.html#autotoc_md348", null ],
         [ "Building a map", "map_building.html#autotoc_md349", [
           [ "Map building pipeline", "map_building.html#autotoc_md350", [
             [ "Detect interest points", "map_building.html#autotoc_md351", null ],

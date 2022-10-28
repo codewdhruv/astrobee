@@ -314,6 +314,20 @@ Functions</h2></td></tr>
 <tr class="separator:aa97752b63a00f3474989c5ad45800f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97d6a115515cd0f4d118fc784686d805"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#a97d6a115515cd0f4d118fc784686d805">MatDescrToVec</a> (cv::Mat const &amp;mat, DBoW2::BriefDescriptor *brief)</td></tr>
 <tr class="separator:a97d6a115515cd0f4d118fc784686d805"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af889d560bc3e58945319379e14c416c5"><td class="memItemLeft" align="right" valign="top">cv::Point2f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#af889d560bc3e58945319379e14c416c5">CvPoint2</a> (const Eigen::Vector2d &amp;point)</td></tr>
+<tr class="separator:af889d560bc3e58945319379e14c416c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b8950f8845024480c84784eb970f780"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#a2b8950f8845024480c84784eb970f780">CreateSubdirectory</a> (const std::string &amp;directory, const std::string &amp;subdirectory)</td></tr>
+<tr class="separator:a2b8950f8845024480c84784eb970f780"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad97d5089fdeb0bc27552375a2bb2dab4"><td class="memItemLeft" align="right" valign="top">boost::optional&lt; <a class="el" href="namespacevision__common.html#a019ff9de88aaa6aa858097014269a464">vc::FeatureMatches</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#ad97d5089fdeb0bc27552375a2bb2dab4">Matches</a> (const <a class="el" href="classvision__common_1_1FeatureImage.html">vc::FeatureImage</a> &amp;current_image, const <a class="el" href="classvision__common_1_1FeatureImage.html">vc::FeatureImage</a> &amp;next_image, <a class="el" href="classvision__common_1_1LKOpticalFlowFeatureDetectorAndMatcher.html">vc::LKOpticalFlowFeatureDetectorAndMatcher</a> &amp;detector_and_matcher)</td></tr>
+<tr class="separator:ad97d5089fdeb0bc27552375a2bb2dab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29bdbda7f027c777503c76f0fbc960e9"><td class="memItemLeft" align="right" valign="top">Eigen::Affine3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#a29bdbda7f027c777503c76f0fbc960e9">EstimateAffine3d</a> (const <a class="el" href="namespacevision__common.html#a019ff9de88aaa6aa858097014269a464">vc::FeatureMatches</a> &amp;matches, const <a class="el" href="classcamera_1_1CameraParameters.html">camera::CameraParameters</a> &amp;camera_params, std::vector&lt; cv::DMatch &gt; &amp;inliers)</td></tr>
+<tr class="separator:a29bdbda7f027c777503c76f0fbc960e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c3d3b647b69c4d204808ca8a06f2f14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvision__common_1_1FeatureImage.html">vc::FeatureImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#a9c3d3b647b69c4d204808ca8a06f2f14">LoadImage</a> (const int index, const std::vector&lt; std::string &gt; &amp;image_names, cv::Feature2D &amp;detector)</td></tr>
+<tr class="separator:a9c3d3b647b69c4d204808ca8a06f2f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76d866eb56b655c684dda7caf1a80c09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvision__common_1_1LKOpticalFlowFeatureDetectorAndMatcherParams.html">vc::LKOpticalFlowFeatureDetectorAndMatcherParams</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#a76d866eb56b655c684dda7caf1a80c09">LoadParams</a> ()</td></tr>
+<tr class="separator:a76d866eb56b655c684dda7caf1a80c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9a38239a13b92ea57c76762260f560f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#af9a38239a13b92ea57c76762260f560f">GetImageNames</a> (const std::string &amp;image_directory, const std::string &amp;image_extension)</td></tr>
+<tr class="separator:af9a38239a13b92ea57c76762260f560f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a0b731df3588db621ba01663cd91c880e"></a>
@@ -1104,6 +1118,34 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a2b8950f8845024480c84784eb970f780"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b8950f8845024480c84784eb970f780">&#9670;&nbsp;</a></span>CreateSubdirectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sparse_mapping::CreateSubdirectory </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>directory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>subdirectory</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="adca120ecf01095aa43eb35b3d01590ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adca120ecf01095aa43eb35b3d01590ec">&#9670;&nbsp;</a></span>CvMatTypeStr()</h2>
 
@@ -1115,6 +1157,24 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">cv::Mat const &amp;&#160;</td>
           <td class="paramname"><em>Mat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af889d560bc3e58945319379e14c416c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af889d560bc3e58945319379e14c416c5">&#9670;&nbsp;</a></span>CvPoint2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::Point2f sparse_mapping::CvPoint2 </td>
+          <td>(</td>
+          <td class="paramtype">const Eigen::Vector2d &amp;&#160;</td>
+          <td class="paramname"><em>point</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1278,6 +1338,40 @@ Functions</h2></td></tr>
           <td class="paramtype">std::string const &amp;&#160;</td>
           <td class="paramname"><em>map_file</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a29bdbda7f027c777503c76f0fbc960e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29bdbda7f027c777503c76f0fbc960e9">&#9670;&nbsp;</a></span>EstimateAffine3d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Affine3d sparse_mapping::EstimateAffine3d </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacevision__common.html#a019ff9de88aaa6aa858097014269a464">vc::FeatureMatches</a> &amp;&#160;</td>
+          <td class="paramname"><em>matches</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classcamera_1_1CameraParameters.html">camera::CameraParameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>camera_params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; cv::DMatch &gt; &amp;&#160;</td>
+          <td class="paramname"><em>inliers</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1763,6 +1857,34 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="af9a38239a13b92ea57c76762260f560f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9a38239a13b92ea57c76762260f560f">&#9670;&nbsp;</a></span>GetImageNames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; sparse_mapping::GetImageNames </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>image_directory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>image_extension</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a381cf5b0bd5ec0e2f329a7ce6f5127ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a381cf5b0bd5ec0e2f329a7ce6f5127ae">&#9670;&nbsp;</a></span>GetLossFunction()</h2>
 
@@ -1962,6 +2084,57 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a9c3d3b647b69c4d204808ca8a06f2f14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c3d3b647b69c4d204808ca8a06f2f14">&#9670;&nbsp;</a></span>LoadImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvision__common_1_1FeatureImage.html">vc::FeatureImage</a> sparse_mapping::LoadImage </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>image_names</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Feature2D &amp;&#160;</td>
+          <td class="paramname"><em>detector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76d866eb56b655c684dda7caf1a80c09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76d866eb56b655c684dda7caf1a80c09">&#9670;&nbsp;</a></span>LoadParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structvision__common_1_1LKOpticalFlowFeatureDetectorAndMatcherParams.html">vision_common::LKOpticalFlowFeatureDetectorAndMatcherParams</a> sparse_mapping::LoadParams </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1a1c08044123bb0cd818db3ac07f1a5e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1a1c08044123bb0cd818db3ac07f1a5e">&#9670;&nbsp;</a></span>Localize()</h2>
 
@@ -2096,6 +2269,40 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Estimate the camera pose for a set of image descriptors and keypoints. Non-member function. We will invoke it both from within the <a class="el" href="structsparse__mapping_1_1SparseMap.html">SparseMap</a> class and from outside of it. </p>
+
+</div>
+</div>
+<a id="ad97d5089fdeb0bc27552375a2bb2dab4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad97d5089fdeb0bc27552375a2bb2dab4">&#9670;&nbsp;</a></span>Matches()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::optional&lt; <a class="el" href="namespacevision__common.html#a019ff9de88aaa6aa858097014269a464">vision_common::FeatureMatches</a> &gt; sparse_mapping::Matches </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvision__common_1_1FeatureImage.html">vc::FeatureImage</a> &amp;&#160;</td>
+          <td class="paramname"><em>current_image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvision__common_1_1FeatureImage.html">vc::FeatureImage</a> &amp;&#160;</td>
+          <td class="paramname"><em>next_image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvision__common_1_1LKOpticalFlowFeatureDetectorAndMatcher.html">vc::LKOpticalFlowFeatureDetectorAndMatcher</a> &amp;&#160;</td>
+          <td class="paramname"><em>detector_and_matcher</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
