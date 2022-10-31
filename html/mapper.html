@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('mapper.html',''); initResizable(); });
 </ul>
 <h2><a class="anchor" id="autotoc_md454"></a>
 Octomapper</h2>
-<p>The Octomapper portion of the <a class="el" href="mapper.html">Mapper</a> creates a 3D occupancy map of the environment that maps known areas probabilistically. The Octomapper builds a representation of the environment (clutter topology) using measurements from the <a class="el" href="picoflexx.html">PicoFlexx ROS Driver</a> depth sensor. Mapping is done in the world frame, and the TF2 library is used to transform from the sensor frame to the world frame based on dynamic transforms published by the EKF, and static transforms published by <a class="el" href="framestore.html">Framestore</a>. It is based on the following work:</p>
+<p>The Octomapper portion of the <a class="el" href="mapper.html">Mapper</a> creates a 3D occupancy map of the environment that maps known areas probabilistically. The Octomapper builds a representation of the environment (clutter topology) using measurements from the <a class="el" href="picoflexx.html">PicoFlexx</a> depth sensor. Mapping is done in the world frame, and the TF2 library is used to transform from the sensor frame to the world frame based on dynamic transforms published by the EKF, and static transforms published by <a class="el" href="framestore.html">Framestore</a>. It is based on the following work:</p>
 <div class="fragment"><div class="line">@article{hornung2013octomap,</div>
 <div class="line">  title={OctoMap: An efficient probabilistic 3D mapping framework based on octrees},</div>
 <div class="line">  author={Hornung, Armin and Wurm, Kai M and Bennewitz, Maren and Stachniss, Cyrill and Burgard, Wolfram},</div>
