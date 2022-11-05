@@ -486,7 +486,7 @@ var searchData=
   ['gripper_5ftick_5fgoal_2445',['gripper_tick_goal',['../structperching__arm_1_1PerchingArm_1_1____attribute____.html#a7528ba6ec86c5e758acdb86d18cc0922',1,'perching_arm::PerchingArm::__attribute__']]],
   ['grippercommand_2446',['GripperCommand',['../classjsonloader_1_1GripperCommand.html',1,'jsonloader::GripperCommand'],['../classjsonloader_1_1GripperCommand.html#ab440e3a2d6d1aaa61455b8387169a104',1,'jsonloader::GripperCommand::GripperCommand()']]],
   ['grippercontrol_2447',['GripperControl',['../classexecutive_1_1Executive.html#a2d932b784bf20160ca3ecc1bd3c733d7',1,'executive::Executive']]],
-  ['ground_5fdds_5fros_5fbridge_2448',['ground_dds_ros_bridge',['../namespaceground__dds__ros__bridge.html',1,'']]],
+  ['ground_5fdds_5fros_5fbridge_2448',['ground_dds_ros_bridge',['../namespaceground__dds__ros__bridge.html',1,'ground_dds_ros_bridge'],['../ground_dds_ros_bridge.html',1,'(Global Namespace)']]],
   ['ground_5fdds_5fros_5fbridge_2ecc_2449',['ground_dds_ros_bridge.cc',['../ground__dds__ros__bridge_8cc.html',1,'']]],
   ['ground_5fdds_5fros_5fbridge_2eh_2450',['ground_dds_ros_bridge.h',['../ground__dds__ros__bridge_8h.html',1,'']]],
   ['ground_5fdds_5fros_5fbridge_5fnode_2ecc_2451',['ground_dds_ros_bridge_node.cc',['../ground__dds__ros__bridge__node_8cc.html',1,'']]],

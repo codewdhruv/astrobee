@@ -8,7 +8,8 @@ var searchData=
   ['granite_20lab_20registration_14874',['Granite Lab Registration',['../granite_lab_registration.html',1,'sparsemapping']]],
   ['graph_20localizer_14875',['Graph Localizer',['../graphlocalizer.html',1,'localization']]],
   ['graph_20optimizer_14876',['Graph Optimizer',['../graphoptimizer.html',1,'localization']]],
-  ['ground_20truth_20localizer_14877',['Ground Truth Localizer',['../groundtruthlocalizer.html',1,'localization']]],
-  ['gnc_20matlab_20code_14878',['GNC Matlab Code',['../matlab.html',1,'gnc']]],
-  ['gnc_20simulation_20wrapper_14879',['GNC Simulation Wrapper',['../simwrapper.html',1,'gnc']]]
+  ['ground_20dds_20ros_20bridge_14877',['Ground DDS ROS Bridge',['../ground_dds_ros_bridge.html',1,'']]],
+  ['ground_20truth_20localizer_14878',['Ground Truth Localizer',['../groundtruthlocalizer.html',1,'localization']]],
+  ['gnc_20matlab_20code_14879',['GNC Matlab Code',['../matlab.html',1,'gnc']]],
+  ['gnc_20simulation_20wrapper_14880',['GNC Simulation Wrapper',['../simwrapper.html',1,'gnc']]]
 ];

@@ -123,6 +123,14 @@ var NAVTREE =
     [ "Command Dictionary", "command_dictionary.html", null ],
     [ "Subsystems", "subsystems.html", "subsystems" ],
     [ "Free Flyer ROS Messages", "ff_msgs.html", null ],
+    [ "Ground DDS ROS Bridge", "ground_dds_ros_bridge.html", [
+      [ "Configuration", "ground_dds_ros_bridge.html#autotoc_md253", [
+        [ "Connecting Robot", "ground_dds_ros_bridge.html#autotoc_md254", null ],
+        [ "Domain id", "ground_dds_ros_bridge.html#autotoc_md255", null ],
+        [ "Namespace", "ground_dds_ros_bridge.html#autotoc_md256", null ]
+      ] ],
+      [ "Running the Ground DDS ROS Bridge", "ground_dds_ros_bridge.html#autotoc_md257", null ]
+    ] ],
     [ "Simulation", "sim-readme.html", "sim-readme" ],
     [ "Tools", "tools.html", "tools" ],
     [ "Class Index", "classes.html", null ]
@@ -132,9 +140,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "access_control.html",
-"imuaugmentor.html#autotoc_md311",
-"md_RELEASE.html#autotoc_md69",
-"theia_map.html#autotoc_md436"
+"import_map.html#autotoc_md409",
+"md_RELEASE.html#autotoc_md63",
+"teleop.html#autotoc_md499"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

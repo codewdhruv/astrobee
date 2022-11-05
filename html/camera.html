@@ -111,7 +111,7 @@ undistort_image input_dir/*[0-9].jpg --output_directory output_dir \
 <p>&ndash;robot_camera: Which of bot's cameras to use. Tested with nav_cam and sci_cam. The default is nav_cam.</p>
 <p>&ndash;alpha: Add an alpha channel and make areas outside the remapped input transparent. Forces PNG output format. Not compatible with save_bgr.</p>
 <p>&ndash;cubic: Use more expensive cubic interpolation for best image quality.</p>
-<h2><a class="anchor" id="autotoc_md253"></a>
+<h2><a class="anchor" id="autotoc_md258"></a>
 Notes</h2>
 <p>For stitching Astrobee SciCam panoramas, the Hugin tools by default expect input image frames to have a "rectilinear" camera model. We can satisfy this by preprocessing input frames using <code>undistort_image</code>. This lets us lean on our own quality-controlled SciCam calibration rather than adding extra lens parameters to complicate Hugin's already huge and not-always-stable stitching optimization problem.</p>
 <p>The following flags are recommended for this use case:</p>
