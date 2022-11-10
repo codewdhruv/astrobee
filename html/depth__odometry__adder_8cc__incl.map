@@ -18,7 +18,7 @@
 <area shape="rect" id="node14" title=" " alt="" coords="377,503,510,530"/>
 <area shape="rect" id="node15" title=" " alt="" coords="535,496,709,537"/>
 <area shape="rect" id="node16" title=" " alt="" coords="733,503,935,530"/>
-<area shape="rect" id="node11" title=" " alt="" coords="6518,593,6569,619"/>
+<area shape="rect" id="node11" title=" " alt="" coords="6519,593,6570,619"/>
 <area shape="rect" id="node20" href="$camera__params_8h.html" title=" " alt="" coords="3035,407,3227,433"/>
 <area shape="rect" id="node24" href="$feature__tracker_8h.html" title=" " alt="" coords="7107,399,7279,441"/>
 <area shape="rect" id="node31" href="$graph__localizer_8h.html" title=" " alt="" coords="5578,199,5741,240"/>
@@ -28,12 +28,12 @@
 <area shape="rect" id="node21" href="$config__reader_8h.html" title=" " alt="" coords="2647,496,2800,537"/>
 <area shape="rect" id="node22" title=" " alt="" coords="3355,503,3447,530"/>
 <area shape="rect" id="node23" title=" " alt="" coords="3089,503,3174,530"/>
-<area shape="rect" id="node25" href="$feature__track_8h.html" title=" " alt="" coords="6985,496,7157,537"/>
-<area shape="rect" id="node26" href="$feature__point_8h.html" title=" " alt="" coords="7054,585,7257,627"/>
-<area shape="rect" id="node27" title=" " alt="" coords="7158,682,7345,709"/>
-<area shape="rect" id="node28" title=" " alt="" coords="6927,593,6970,619"/>
+<area shape="rect" id="node25" href="$feature__track_8h.html" title=" " alt="" coords="6987,496,7159,537"/>
+<area shape="rect" id="node26" href="$feature__point_8h.html" title=" " alt="" coords="7055,585,7258,627"/>
+<area shape="rect" id="node27" title=" " alt="" coords="7159,682,7346,709"/>
+<area shape="rect" id="node28" title=" " alt="" coords="6929,593,6971,619"/>
 <area shape="rect" id="node29" href="$feature__tracker__params_8h.html" title=" " alt="" coords="5896,496,6068,537"/>
-<area shape="rect" id="node30" title=" " alt="" coords="6847,503,6909,530"/>
+<area shape="rect" id="node30" title=" " alt="" coords="6848,503,6911,530"/>
 <area shape="rect" id="node32" href="$combined__nav__state__node__updater_8h.html" title=" " alt="" coords="5019,295,5219,337"/>
 <area shape="rect" id="node33" href="$combined__nav__state__node__updater__params_8h.html" title=" " alt="" coords="5103,392,5293,448"/>
 <area shape="rect" id="node34" href="$combined__nav__state_8h.html" title=" " alt="" coords="4770,496,4943,537"/>
@@ -63,8 +63,8 @@
 <area shape="rect" id="node59" href="$standstill__factor__adder_8h.html" title=" " alt="" coords="8573,295,8759,337"/>
 <area shape="rect" id="node60" href="$graph__optimizer_8h.html" title=" " alt="" coords="6000,399,6169,441"/>
 <area shape="rect" id="node61" title=" " alt="" coords="5671,496,5871,537"/>
-<area shape="rect" id="node62" title=" " alt="" coords="6092,503,6299,530"/>
-<area shape="rect" id="node63" title=" " alt="" coords="6323,496,6518,537"/>
+<area shape="rect" id="node62" title=" " alt="" coords="6093,503,6301,530"/>
+<area shape="rect" id="node63" title=" " alt="" coords="6325,496,6519,537"/>
 <area shape="rect" id="node64" href="$combined__nav__state__covariances_8h.html" title=" " alt="" coords="3303,392,3464,448"/>
 <area shape="rect" id="node65" title=" " alt="" coords="3909,407,4108,433"/>
 <area shape="rect" id="node66" title=" " alt="" coords="7312,303,7537,329"/>

@@ -2,7 +2,7 @@ var searchData=
 [
   ['objectfield_4090',['ObjectField',['../classjsonloader_1_1ObjectField.html',1,'jsonloader::ObjectField'],['../classjsonloader_1_1ObjectField.html#a28d1a1db8ad7b908dec778603ef8862e',1,'jsonloader::ObjectField::ObjectField()']]],
   ['observed_4091',['observed',['../structsparse__mapping_1_1ReprojectionError.html#a0ad7ceefee1801ddbdd0f0198857f221',1,'sparse_mapping::ReprojectionError']]],
-  ['obstacle_5fdetected_4092',['OBSTACLE_DETECTED',['../classchoreographer_1_1ChoreographerNodelet.html#a49d48e0781db1ad626996d44b6bd6352a678278bebe8e2e55a2f5ec2967b1cb85',1,'choreographer::ChoreographerNodelet']]],
+  ['obstacle_5fdetected_4092',['OBSTACLE_DETECTED',['../classchoreographer_1_1ChoreographerNodelet.html#aa222833bd12725fee487028bfc194894a678278bebe8e2e55a2f5ec2967b1cb85',1,'choreographer::ChoreographerNodelet']]],
   ['octaves_4093',['octaves',['../classinterest__point_1_1BRISK__Impl.html#afd846586837a41513c190b3f20cc3761',1,'interest_point::BRISK_Impl']]],
   ['octoclass_4094',['OctoClass',['../classoctoclass_1_1OctoClass.html',1,'octoclass::OctoClass'],['../namespaceoctoclass.html',1,'octoclass'],['../classoctoclass_1_1OctoClass.html#a48e22627df9a3a1a7a13c4cb8357165e',1,'octoclass::OctoClass::OctoClass(const double resolution_in)'],['../classoctoclass_1_1OctoClass.html#ab7764099d711c4b950f8beeacc7f1e5b',1,'octoclass::OctoClass::OctoClass()']]],
   ['octoclass_2ecc_4095',['octoclass.cc',['../octoclass_8cc.html',1,'']]],
@@ -73,7 +73,7 @@ var searchData=
   ['op_5fstate_5frepo_2eh_4160',['op_state_repo.h',['../op__state__repo_8h.html',1,'']]],
   ['op_5fstate_5fteleop_2ecc_4161',['op_state_teleop.cc',['../op__state__teleop_8cc.html',1,'']]],
   ['op_5fstate_5fteleop_2eh_4162',['op_state_teleop.h',['../op__state__teleop_8h.html',1,'']]],
-  ['open_4163',['Open',['../classff__serial_1_1Serial.html#a3e51c7b33636dbcb4d6f84b2fad1daf5',1,'ff_serial::Serial::Open()'],['../classI2c_1_1I2c.html#ad4cfe0b418f1b54ddbdfd401d825c875',1,'I2c::I2c::Open()'],['../classi2c_1_1Bus.html#a60ff88112dfbd854183bf44aba8021d4',1,'i2c::Bus::Open()'],['../classjsonloader_1_1GripperCommand.html#a7a1f833b3d28c0f78cdd009d9918b302',1,'jsonloader::GripperCommand::open()'],['../namespacei2c.html#afc6f7858ce40c46288520f3d641de686',1,'i2c::Open()']]],
+  ['open_4163',['open',['../classjsonloader_1_1GripperCommand.html#a7a1f833b3d28c0f78cdd009d9918b302',1,'jsonloader::GripperCommand::open()'],['../classff__serial_1_1Serial.html#a3e51c7b33636dbcb4d6f84b2fad1daf5',1,'ff_serial::Serial::Open()'],['../classI2c_1_1I2c.html#ad4cfe0b418f1b54ddbdfd401d825c875',1,'I2c::I2c::Open()'],['../classi2c_1_1Bus.html#a60ff88112dfbd854183bf44aba8021d4',1,'i2c::Bus::Open()'],['../namespacei2c.html#afc6f7858ce40c46288520f3d641de686',1,'i2c::Open()']]],
   ['opengripper_4164',['OpenGripper',['../classperching__arm_1_1PerchingArm.html#a995629142b9573d046c6c9487538b9e0',1,'perching_arm::PerchingArm']]],
   ['operating_5flimits_4165',['operating_limits',['../classjsonloader_1_1Plan.html#a60d7b2867ef15e63bc0e829bf650ad0b',1,'jsonloader::Plan']]],
   ['operatinglimits_4166',['OperatingLimits',['../classjsonloader_1_1OperatingLimits.html',1,'jsonloader::OperatingLimits'],['../classjsonloader_1_1OperatingLimits.html#ab7126eb82d952dc4e0dd0c66a9b36b70',1,'jsonloader::OperatingLimits::OperatingLimits(Json::Value const &amp;obj)'],['../classjsonloader_1_1OperatingLimits.html#a4521d5ae80eee8bb483be1d97a14e1b1',1,'jsonloader::OperatingLimits::OperatingLimits()']]],

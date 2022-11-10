@@ -8,9 +8,9 @@
 <area shape="rect" id="node15" href="$localization_2graph__localizer_2include_2graph__localizer_2utilities_8h.html" title=" " alt="" coords="2605,221,2781,277"/>
 <area shape="rect" id="node19" href="$graph__localizer_8cc.html" title=" " alt="" coords="1077,339,1225,395"/>
 <area shape="rect" id="node33" href="$tools_2localization__analysis_2include_2localization__analysis_2utilities_8h.html" title=" " alt="" coords="4972,221,5185,277"/>
-<area shape="rect" id="node41" href="$localization__graph__display_8h.html" title=" " alt="" coords="5530,221,5739,277"/>
-<area shape="rect" id="node42" href="$localization__graph__panel_8h.html" title=" " alt="" coords="6083,221,6293,277"/>
-<area shape="rect" id="node44" href="$tools_2localization__rviz__plugins_2src_2utilities_8h.html" title=" " alt="" coords="6320,228,6515,269"/>
+<area shape="rect" id="node41" href="$tools_2localization__rviz__plugins_2src_2utilities_8h.html" title=" " alt="" coords="6297,228,6492,269"/>
+<area shape="rect" id="node47" href="$localization__graph__display_8h.html" title=" " alt="" coords="5530,221,5739,277"/>
+<area shape="rect" id="node48" href="$localization__graph__panel_8h.html" title=" " alt="" coords="6702,221,6911,277"/>
 <area shape="rect" id="node4" href="$graph__localizer__nodelet_8h.html" title=" " alt="" coords="243,332,429,403"/>
 <area shape="rect" id="node6" href="$graph__localizer__wrapper_8cc.html" title=" " alt="" coords="687,339,849,395"/>
 <area shape="rect" id="node7" href="$graph__localizer__simulator_8h.html" title=" " alt="" coords="5,332,219,403"/>
@@ -44,9 +44,9 @@
 <area shape="rect" id="node38" href="$tools_2localization__analysis_2src_2utilities_8cc.html" title=" " alt="" coords="4891,347,5069,388"/>
 <area shape="rect" id="node39" href="$convert__depth__msg_8cc.html" title=" " alt="" coords="5093,339,5265,395"/>
 <area shape="rect" id="node40" href="$localization__graph__display_8cc.html" title=" " alt="" coords="5850,339,6059,395"/>
-<area shape="rect" id="node43" href="$localization__graph__panel_8cc.html" title=" " alt="" coords="6083,339,6293,395"/>
-<area shape="rect" id="node45" href="$depth__odometry__display_8cc.html" title=" " alt="" coords="6543,339,6713,395"/>
-<area shape="rect" id="node46" href="$imu__augmentor__display_8cc.html" title=" " alt="" coords="6737,339,6908,395"/>
-<area shape="rect" id="node47" href="$pose__display_8cc.html" title=" " alt="" coords="6932,339,7097,395"/>
-<area shape="rect" id="node48" href="$tools_2localization__rviz__plugins_2src_2utilities_8cc.html" title=" " alt="" coords="6317,347,6518,388"/>
+<area shape="rect" id="node42" href="$depth__odometry__display_8cc.html" title=" " alt="" coords="6309,339,6480,395"/>
+<area shape="rect" id="node43" href="$imu__augmentor__display_8cc.html" title=" " alt="" coords="6504,339,6675,395"/>
+<area shape="rect" id="node44" href="$localization__graph__panel_8cc.html" title=" " alt="" coords="6889,339,7098,395"/>
+<area shape="rect" id="node45" href="$pose__display_8cc.html" title=" " alt="" coords="6699,339,6864,395"/>
+<area shape="rect" id="node46" href="$tools_2localization__rviz__plugins_2src_2utilities_8cc.html" title=" " alt="" coords="6083,347,6285,388"/>
 </map>

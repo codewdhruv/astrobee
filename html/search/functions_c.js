@@ -95,7 +95,7 @@ var searchData=
   ['loadgraphoptimizerparams_10206',['LoadGraphOptimizerParams',['../namespacegraph__optimizer.html#adf00793fb5f042ec2400de87682b1f2e',1,'graph_optimizer']]],
   ['loadhandrailfactoradderparams_10207',['LoadHandrailFactorAdderParams',['../namespacegraph__localizer.html#af35203a398efcf4196a99e2a3517a8db',1,'graph_localizer']]],
   ['loadhandrailparams_10208',['LoadHandrailParams',['../namespacegraph__localizer.html#ad71f201f8fad7b264fca99bb37067979',1,'graph_localizer']]],
-  ['loadimage_10209',['LoadImage',['../namespacesparse__mapping.html#a9c3d3b647b69c4d204808ca8a06f2f14',1,'sparse_mapping']]],
+  ['loadimage_10209',['LoadImage',['../namespacesparse__mapping.html#ac19aaa4ef34b4f46362c0ae570fd3731',1,'sparse_mapping']]],
   ['loadimagefeatureswithknowncorrespondencesalignerdepthodometryparams_10210',['LoadImageFeaturesWithKnownCorrespondencesAlignerDepthOdometryParams',['../namespacedepth__odometry.html#ae4f9256f54ac87c9eb0fb9eb7b9f8c14',1,'depth_odometry']]],
   ['loadimufilterparams_10211',['LoadImuFilterParams',['../namespaceimu__integration.html#a5b441040ac66dc18d28ffd395224898b',1,'imu_integration']]],
   ['loadimuintegrationparams_10212',['LoadImuIntegrationParams',['../namespacegraph__localizer.html#a2affba6d71473eb03828eed1a063e9de',1,'graph_localizer']]],

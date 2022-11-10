@@ -1,16 +1,16 @@
 <map id="communications/ground_dds_ros_bridge/include/ground_dds_ros_bridge/rapid_image.h" name="communications/ground_dds_ros_bridge/include/ground_dds_ros_bridge/rapid_image.h">
-<area shape="rect" id="node1" title=" " alt="" coords="1025,5,1204,76"/>
+<area shape="rect" id="node1" title=" " alt="" coords="1027,5,1205,76"/>
 <area shape="rect" id="node2" title=" " alt="" coords="733,213,792,240"/>
 <area shape="rect" id="node3" title=" " alt="" coords="297,131,364,158"/>
 <area shape="rect" id="node4" title=" " alt="" coords="5,213,83,240"/>
 <area shape="rect" id="node5" href="$ground__dds__ros__bridge_2include_2ground__dds__ros__bridge_2rapid__sub__ros__pub_8h.html" title=" " alt="" coords="389,124,561,165"/>
 <area shape="rect" id="node11" href="$ground__dds__ros__bridge_2include_2ground__dds__ros__bridge_2util_8h.html" title=" " alt="" coords="802,124,974,165"/>
-<area shape="rect" id="node18" title=" " alt="" coords="999,131,1231,158"/>
-<area shape="rect" id="node19" title=" " alt="" coords="1255,131,1486,158"/>
-<area shape="rect" id="node20" title=" " alt="" coords="1511,124,1729,165"/>
-<area shape="rect" id="node21" title=" " alt="" coords="1754,131,1953,158"/>
-<area shape="rect" id="node22" title=" " alt="" coords="1977,131,2183,158"/>
-<area shape="rect" id="node23" title=" " alt="" coords="2208,131,2453,158"/>
+<area shape="rect" id="node18" title=" " alt="" coords="999,131,1233,158"/>
+<area shape="rect" id="node19" title=" " alt="" coords="1258,131,1489,158"/>
+<area shape="rect" id="node20" title=" " alt="" coords="1513,124,1732,165"/>
+<area shape="rect" id="node21" title=" " alt="" coords="1757,131,1955,158"/>
+<area shape="rect" id="node22" title=" " alt="" coords="1979,131,2186,158"/>
+<area shape="rect" id="node23" title=" " alt="" coords="2211,131,2456,158"/>
 <area shape="rect" id="node6" title=" " alt="" coords="107,213,171,240"/>
 <area shape="rect" id="node7" title=" " alt="" coords="195,213,261,240"/>
 <area shape="rect" id="node8" title=" " alt="" coords="286,213,365,240"/>
