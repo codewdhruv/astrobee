@@ -722,7 +722,13 @@ td.inner_table {
     <td class="params_parameter">Apk Name</td>
     <td class="params_type">string</td>
     <td class="params_default">required</td>
-    <td class="params_notes">Which guest science APK to terminae</td>
+    <td class="params_notes">Which guest science APK to restart</td>
+  </tr>
+  <tr>
+    <td class="params_parameter">Wait</td>
+    <td class="params_type">long</td>
+    <td class="params_default">required</td>
+    <td class="params_notes">The time in seconds the guest science manager waits in between sending the stop and start commands to the guest science apk. Different apks will need different wait times to allow a complete shutdown before starting again. A 2 second wait time is recommended for simple guest science apks. For the sci_cam_image apk which has to release the science camera hardware resources, we empirically found a conservative wait time of 10 seconds worked reliably.</td>
   </tr>
 </table>
 
