@@ -152,12 +152,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aaa103eeeba3239188ab54e98dd216b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c24ab1a1214e3b09fee629c33703e25"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classctl_1_1Ctl.html#a4c24ab1a1214e3b09fee629c33703e25">Control</a> (uint8_t const <a class="el" href="signal__lights_8h.html#a37e90f5e3bd99fac2021fb3a326607d4">mode</a>, ff_msgs::ControlCommand const &amp;poseVel=ff_msgs::ControlCommand())</td></tr>
 <tr class="separator:a4c24ab1a1214e3b09fee629c33703e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4412312dab37b6e7a3b6aa76eae0514c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classctl_1_1Ctl.html#a4412312dab37b6e7a3b6aa76eae0514c">Step</a> (void)</td></tr>
-<tr class="separator:a4412312dab37b6e7a3b6aa76eae0514c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac5acdb63bcc0997d92bf9ccd2d4c274"><td class="memItemLeft" align="right" valign="top">ctl_msg *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classctl_1_1Ctl.html#aac5acdb63bcc0997d92bf9ccd2d4c274">GetCtlMsg</a> (void)</td></tr>
-<tr class="separator:aac5acdb63bcc0997d92bf9ccd2d4c274"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad009247deb2a001a35effb37cb2b08a"><td class="memItemLeft" align="right" valign="top">cmd_msg *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classctl_1_1Ctl.html#aad009247deb2a001a35effb37cb2b08a">GetCmdMsg</a> (void)</td></tr>
-<tr class="separator:aad009247deb2a001a35effb37cb2b08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b7a600e24f87f80213bed7645664f07"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classctl_1_1Ctl.html#a2b7a600e24f87f80213bed7645664f07">Step</a> (ros::Time curr_time)</td></tr>
+<tr class="separator:a2b7a600e24f87f80213bed7645664f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00ce92123b215d04b32377e32244fca5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classctl_1_1Ctl.html#a00ce92123b215d04b32377e32244fca5">ReadParams</a> (void)</td></tr>
 <tr class="separator:a00ce92123b215d04b32377e32244fca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade30261148977bc61dee7fe49f4903b4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classctl_1_1Ctl.html#ade30261148977bc61dee7fe49f4903b4">getName</a> ()</td></tr>
@@ -395,58 +391,6 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aad009247deb2a001a35effb37cb2b08a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad009247deb2a001a35effb37cb2b08a">&#9670;&nbsp;</a></span>GetCmdMsg()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">cmd_msg* ctl::Ctl::GetCmdMsg </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aac5acdb63bcc0997d92bf9ccd2d4c274"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac5acdb63bcc0997d92bf9ccd2d4c274">&#9670;&nbsp;</a></span>GetCtlMsg()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ctl_msg* ctl::Ctl::GetCtlMsg </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ade30261148977bc61dee7fe49f4903b4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ade30261148977bc61dee7fe49f4903b4">&#9670;&nbsp;</a></span>getName()</h2>
 
@@ -589,8 +533,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a4412312dab37b6e7a3b6aa76eae0514c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4412312dab37b6e7a3b6aa76eae0514c">&#9670;&nbsp;</a></span>Step()</h2>
+<a id="a2b7a600e24f87f80213bed7645664f07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b7a600e24f87f80213bed7645664f07">&#9670;&nbsp;</a></span>Step()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -598,8 +542,8 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">bool ctl::Ctl::Step </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">ros::Time&#160;</td>
+          <td class="paramname"><em>curr_time</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
