@@ -120,14 +120,14 @@ export ASTROBEE_WORLD=granite
 </pre><p>having nav cam's intrinsics. If your camera is not the nav cam on p4d, and none of the other available config files apply, you can just temporarily modify the above files to reflect your camera's parameters (without checking in your changes).</p>
 <p>More details on these and other environmental variables can be found in the <a class="el" href="astrobee.html">General Considerations</a> configuration documentation.</p>
 <h2><a class="anchor" id="autotoc_md353"></a>
-Reduce the number of images and remove images that might cause errors during bundle-adjustment</h2>
+Partition the files into movement sequences and reduce the number of images to improve bundle-adjustment accuracy</h2>
+<p>Partition image files into sequences: rosrun <a class="el" href="namespacesparse__mapping.html">sparse_mapping</a> partition_image_sequences image_directory_name config_path</p>
+<p>Partitions a sequentially ordered set of image files into valid, rotation, and invalid sequences. During bundle adjustment, it is useful to avoid adding pure rotation sequences initially as these cause errors for monocular systems. The resulting sequences can be individually bundle-adjusted and merged as described later, generally starting with the valid (non-rotation) sequences and optionally adding rotations at the end once enough matches exist in the map. See 'rosrun <a class="el" href="namespacesparse__mapping.html">sparse_mapping</a> partition_image_sequences -h' for more usage details, options, and instructions.</p>
 <p>Remove low movement images: rosrun <a class="el" href="namespacesparse__mapping.html">sparse_mapping</a> remove_low_movement_images image_directory_name</p>
 <p>This will delete subsequent images with low movement from that directory to improve mapping performance and accuracy.</p>
-<p>Remove rotation-only movement images: rosrun <a class="el" href="namespacesparse__mapping.html">sparse_mapping</a> remove_rotation_only_images image_directory_name config_path</p>
-<p>Removes rotation only image sequences and optionally saves different movement sequences to different subdirectories. See 'rosrun <a class="el" href="namespacesparse__mapping.html">sparse_mapping</a> remove_rotation_only_images -h' for more usage details, options, and instructions.</p>
 <p>These are non-reversible operations, so they should be invoked on a copy of the images.</p>
 <p>If possible, the robot should have some translation motion (in addition to any rotation) when the data is acquired.</p>
-<p>Removing low movement and rotation only movement images helps the accuracy of bundle adjustment, which struggles to optimize camera poses with small or no translation changes.</p>
+<p>Removing low movement images and initially only adding valid movement images helps the accuracy of bundle adjustment, which struggles to optimize camera poses with small or no translation changes.</p>
 <h2><a class="anchor" id="autotoc_md354"></a>
 Building a map</h2>
 <p>Execute this command to construct a complete map: </p><pre class="fragment">build_map &lt;image dir&gt;/*.jpg [ -num_subsequent_images &lt;val&gt; ] \
