@@ -328,6 +328,10 @@ Functions</h2></td></tr>
 <tr class="separator:ac19aaa4ef34b4f46362c0ae570fd3731"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76d866eb56b655c684dda7caf1a80c09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structvision__common_1_1LKOpticalFlowFeatureDetectorAndMatcherParams.html">vc::LKOpticalFlowFeatureDetectorAndMatcherParams</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#a76d866eb56b655c684dda7caf1a80c09">LoadParams</a> ()</td></tr>
 <tr class="separator:a76d866eb56b655c684dda7caf1a80c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a738a8ff55dfea5db63a2fa8d779ad598"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#a738a8ff55dfea5db63a2fa8d779ad598">LowMovementImagePair</a> (const <a class="el" href="namespacevision__common.html#a019ff9de88aaa6aa858097014269a464">vision_common::FeatureMatches</a> &amp;matches, const double max_low_movement_mean_distance)</td></tr>
+<tr class="separator:a738a8ff55dfea5db63a2fa8d779ad598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a986d7c667172f81f7b718ab71c1116fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#a986d7c667172f81f7b718ab71c1116fe">LowMovementImagePair</a> (const <a class="el" href="classvision__common_1_1FeatureImage.html">vc::FeatureImage</a> &amp;current_image, const <a class="el" href="classvision__common_1_1FeatureImage.html">vc::FeatureImage</a> &amp;next_image, const double max_low_movement_mean_distance, <a class="el" href="classvision__common_1_1LKOpticalFlowFeatureDetectorAndMatcher.html">vc::LKOpticalFlowFeatureDetectorAndMatcher</a> &amp;detector_and_matcher)</td></tr>
+<tr class="separator:a986d7c667172f81f7b718ab71c1116fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9a38239a13b92ea57c76762260f560f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacesparse__mapping.html#af9a38239a13b92ea57c76762260f560f">GetImageNames</a> (const std::string &amp;image_directory, const std::string &amp;image_extension)</td></tr>
 <tr class="separator:af9a38239a13b92ea57c76762260f560f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -2271,6 +2275,74 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Estimate the camera pose for a set of image descriptors and keypoints. Non-member function. We will invoke it both from within the <a class="el" href="structsparse__mapping_1_1SparseMap.html">SparseMap</a> class and from outside of it. </p>
+
+</div>
+</div>
+<a id="a986d7c667172f81f7b718ab71c1116fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a986d7c667172f81f7b718ab71c1116fe">&#9670;&nbsp;</a></span>LowMovementImagePair() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sparse_mapping::LowMovementImagePair </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvision__common_1_1FeatureImage.html">vc::FeatureImage</a> &amp;&#160;</td>
+          <td class="paramname"><em>current_image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classvision__common_1_1FeatureImage.html">vc::FeatureImage</a> &amp;&#160;</td>
+          <td class="paramname"><em>next_image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>max_low_movement_mean_distance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvision__common_1_1LKOpticalFlowFeatureDetectorAndMatcher.html">vc::LKOpticalFlowFeatureDetectorAndMatcher</a> &amp;&#160;</td>
+          <td class="paramname"><em>detector_and_matcher</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a738a8ff55dfea5db63a2fa8d779ad598"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a738a8ff55dfea5db63a2fa8d779ad598">&#9670;&nbsp;</a></span>LowMovementImagePair() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sparse_mapping::LowMovementImagePair </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacevision__common.html#a019ff9de88aaa6aa858097014269a464">vision_common::FeatureMatches</a> &amp;&#160;</td>
+          <td class="paramname"><em>matches</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>max_low_movement_mean_distance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
