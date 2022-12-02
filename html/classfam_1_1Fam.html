@@ -121,6 +121,20 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:aeb57e1efc5400368a961ebe8d4ff355f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac27801db1a44b06b2da7ad0235f50e44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfam_1_1Fam.html#ac27801db1a44b06b2da7ad0235f50e44">InertiaCallback</a> (const geometry_msgs::InertiaStamped::ConstPtr &amp;inertia)</td></tr>
 <tr class="separator:ac27801db1a44b06b2da7ad0235f50e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f0a4e2184d59ca473502ac9a3f1e5b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfam_1_1Fam.html#a6f0a4e2184d59ca473502ac9a3f1e5b6">RunFam</a> (const <a class="el" href="structfam_1_1FamInput.html">FamInput</a> &amp;in, uint8_t *speed_cmd, Eigen::Matrix&lt; float, 12, 1 &gt; &amp;servo_pwm_cmd)</td></tr>
+<tr class="separator:a6f0a4e2184d59ca473502ac9a3f1e5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29af4c98266ba8187c4afea94588cb5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfam_1_1Fam.html#a29af4c98266ba8187c4afea94588cb5b">CalcThrustMatrices</a> (const Eigen::Vector3f &amp;force, const Eigen::Vector3f &amp;torque, Eigen::Matrix&lt; float, 6, 1 &gt; &amp;pmc1_nozzle_thrusts, Eigen::Matrix&lt; float, 6, 1 &gt; &amp;pmc2_nozzle_thrusts)</td></tr>
+<tr class="separator:a29af4c98266ba8187c4afea94588cb5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b91db44d35e824c4480a5aa54e505a8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfam_1_1Fam.html#a9b91db44d35e824c4480a5aa54e505a8">Lookup</a> (int table_size, const float lookup[], const float breakpoints[], float value)</td></tr>
+<tr class="separator:a9b91db44d35e824c4480a5aa54e505a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7883bf0fd64ab40c8345258c04d323b9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfam_1_1Fam.html#a7883bf0fd64ab40c8345258c04d323b9">ComputePlenumDeltaPressure</a> (float impeller_speed, Eigen::Matrix&lt; float, 6, 1 &gt; &amp;discharge_coeff, const Eigen::Matrix&lt; float, 6, 1 &gt; &amp;nozzle_thrusts)</td></tr>
+<tr class="separator:a7883bf0fd64ab40c8345258c04d323b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae624fd1ed09a46f77c7cf61dd469f7f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfam_1_1Fam.html#ae624fd1ed09a46f77c7cf61dd469f7f4">CalcPMServoCmd</a> (bool is_pmc1, uint8_t speed_gain_cmd, const Eigen::Matrix&lt; float, 6, 1 &gt; &amp;nozzle_thrusts, uint8_t &amp;impeller_speed_cmd, Eigen::Matrix&lt; float, 6, 1 &gt; &amp;servo_pwm_cmd, Eigen::Matrix&lt; float, 6, 1 &gt; &amp;nozzle_theta_cmd, Eigen::Matrix&lt; float, 6, 1 &gt; &amp;normalized_pressure_density, Eigen::Matrix&lt; float, 6, 1 &gt; &amp;command_area_per_nozzle)</td></tr>
+<tr class="separator:ae624fd1ed09a46f77c7cf61dd469f7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dfed7bc931022ca82edf72b9f3bbca5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfam_1_1Fam.html#a8dfed7bc931022ca82edf72b9f3bbca5">UpdateCOM</a> (const Eigen::Vector3f &amp;com)</td></tr>
+<tr class="separator:a8dfed7bc931022ca82edf72b9f3bbca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0a60583a201702b1e1b94c028898229"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfam_1_1Fam.html#aa0a60583a201702b1e1b94c028898229">TestTwoVectors</a> (const char *<a class="el" href="eps__simulator_8cc.html#a9b45b3e13bd9167aab02e17e08916231">name</a>, const Eigen::Matrix&lt; float, 6, 1 &gt; new_array, const float old_array[], float tolerance)</td></tr>
+<tr class="separator:aa0a60583a201702b1e1b94c028898229"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -146,10 +160,38 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a173f79f70c9219c4ac13bb725de4bab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dceeaf98a2136a385a065db11088212"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfam_1_1Fam.html#a9dceeaf98a2136a385a065db11088212">mutex_mass_</a></td></tr>
 <tr class="separator:a9dceeaf98a2136a385a065db11088212"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a743f5e9f3dc49e98e0e3a46c96ef5aa6"><td class="memItemLeft" align="right" valign="top">geometry_msgs::Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfam_1_1Fam.html#a743f5e9f3dc49e98e0e3a46c96ef5aa6">center_of_mass_</a></td></tr>
-<tr class="separator:a743f5e9f3dc49e98e0e3a46c96ef5aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9b4845d3e2a2ae26dca7397c388cc00"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3f&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfam_1_1Fam.html#ad9b4845d3e2a2ae26dca7397c388cc00">center_of_mass_</a></td></tr>
+<tr class="separator:ad9b4845d3e2a2ae26dca7397c388cc00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcb6a546316e161c2641391bafde58c4"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; float, 3, 12 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfam_1_1Fam.html#afcb6a546316e161c2641391bafde58c4">thrust2force_</a></td></tr>
+<tr class="separator:afcb6a546316e161c2641391bafde58c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96b8a8d2904674563523d0a4f9751194"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; float, 3, 12 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfam_1_1Fam.html#a96b8a8d2904674563523d0a4f9751194">thrust2torque_</a></td></tr>
+<tr class="separator:a96b8a8d2904674563523d0a4f9751194"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5f4c990496e1cffdbe506154a805148"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; float, 12, 6 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfam_1_1Fam.html#ab5f4c990496e1cffdbe506154a805148">forcetorque2thrust_</a></td></tr>
+<tr class="separator:ab5f4c990496e1cffdbe506154a805148"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82543f7a7eabae64dc32d1c64f4a9d77"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfam_1_1Fam.html#a82543f7a7eabae64dc32d1c64f4a9d77">inertia_received_</a></td></tr>
 <tr class="separator:a82543f7a7eabae64dc32d1c64f4a9d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1eaa084ca66bce493254697ef4267d0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfam_1_1Fam.html#ac1eaa084ca66bce493254697ef4267d0">use_old_fam_</a></td></tr>
+<tr class="separator:ac1eaa084ca66bce493254697ef4267d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a483abf91e7dad70d834dbf2189510d36"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfam_1_1Fam.html#a483abf91e7dad70d834dbf2189510d36">compare_fam_</a></td></tr>
+<tr class="separator:a483abf91e7dad70d834dbf2189510d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d14b3201d942e2ccb2e3b2939ebea7e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structfam_1_1FamInput.html">FamInput</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfam_1_1Fam.html#a5d14b3201d942e2ccb2e3b2939ebea7e">input_</a></td></tr>
+<tr class="separator:a5d14b3201d942e2ccb2e3b2939ebea7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7596d283b30c8cda296f8ae3ce595573"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; float, 6, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfam_1_1Fam.html#a7596d283b30c8cda296f8ae3ce595573">abp_PM1_P_nozzle_B_B</a></td></tr>
+<tr class="separator:a7596d283b30c8cda296f8ae3ce595573"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a002c4530f46c5cf0e107740f92fad1bb"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; float, 6, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfam_1_1Fam.html#a002c4530f46c5cf0e107740f92fad1bb">abp_PM2_P_nozzle_B_B</a></td></tr>
+<tr class="separator:a002c4530f46c5cf0e107740f92fad1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4f87dcddc342659425c41d011f9cc08"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; float, 6, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfam_1_1Fam.html#ad4f87dcddc342659425c41d011f9cc08">abp_PM1_nozzle_orientations</a></td></tr>
+<tr class="separator:ad4f87dcddc342659425c41d011f9cc08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5da543fd7f2e7e587d7b861586c11f1e"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; float, 6, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfam_1_1Fam.html#a5da543fd7f2e7e587d7b861586c11f1e">abp_PM2_nozzle_orientations</a></td></tr>
+<tr class="separator:a5da543fd7f2e7e587d7b861586c11f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf13358001cd55377ade3ec4c7dbf6da"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfam_1_1Fam.html#adf13358001cd55377ade3ec4c7dbf6da">IMPELLER_SPEEDS</a> [3] = {2000 * 2 * M_PI / 60, 2500 * 2 * M_PI / 60, 2800 * 2 * M_PI / 60}</td></tr>
+<tr class="separator:adf13358001cd55377ade3ec4c7dbf6da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3b4b5850dd021e614d4c6aedcdec10b"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfam_1_1Fam.html#af3b4b5850dd021e614d4c6aedcdec10b">THRUST_LOOKUP_SIZE</a> = 316</td></tr>
+<tr class="separator:af3b4b5850dd021e614d4c6aedcdec10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2ece413ee6efe9b961ead762364bebd"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfam_1_1Fam.html#ae2ece413ee6efe9b961ead762364bebd">THRUST_LOOKUP_BREAKPOINTS</a> [316]</td></tr>
+<tr class="separator:ae2ece413ee6efe9b961ead762364bebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab66cb3aca8cb82fd09b81fb6ffd9ee46"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfam_1_1Fam.html#ab66cb3aca8cb82fd09b81fb6ffd9ee46">THRUST_LOOKUP_CDP</a> [316]</td></tr>
+<tr class="separator:ab66cb3aca8cb82fd09b81fb6ffd9ee46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Force Allocation Module implementation using GNC module. </p>
@@ -198,6 +240,168 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae624fd1ed09a46f77c7cf61dd469f7f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae624fd1ed09a46f77c7cf61dd469f7f4">&#9670;&nbsp;</a></span>CalcPMServoCmd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fam::Fam::CalcPMServoCmd </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_pmc1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>speed_gain_cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::Matrix&lt; float, 6, 1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>nozzle_thrusts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t &amp;&#160;</td>
+          <td class="paramname"><em>impeller_speed_cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::Matrix&lt; float, 6, 1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>servo_pwm_cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::Matrix&lt; float, 6, 1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>nozzle_theta_cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::Matrix&lt; float, 6, 1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>normalized_pressure_density</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::Matrix&lt; float, 6, 1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>command_area_per_nozzle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a29af4c98266ba8187c4afea94588cb5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29af4c98266ba8187c4afea94588cb5b">&#9670;&nbsp;</a></span>CalcThrustMatrices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fam::Fam::CalcThrustMatrices </td>
+          <td>(</td>
+          <td class="paramtype">const Eigen::Vector3f &amp;&#160;</td>
+          <td class="paramname"><em>force</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::Vector3f &amp;&#160;</td>
+          <td class="paramname"><em>torque</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::Matrix&lt; float, 6, 1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pmc1_nozzle_thrusts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::Matrix&lt; float, 6, 1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pmc2_nozzle_thrusts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7883bf0fd64ab40c8345258c04d323b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7883bf0fd64ab40c8345258c04d323b9">&#9670;&nbsp;</a></span>ComputePlenumDeltaPressure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float fam::Fam::ComputePlenumDeltaPressure </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>impeller_speed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::Matrix&lt; float, 6, 1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>discharge_coeff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::Matrix&lt; float, 6, 1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>nozzle_thrusts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5a031b846bc54b30675594fa73f71d7b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5a031b846bc54b30675594fa73f71d7b">&#9670;&nbsp;</a></span>CtlCallBack()</h2>
 
@@ -276,6 +480,54 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a9b91db44d35e824c4480a5aa54e505a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b91db44d35e824c4480a5aa54e505a8">&#9670;&nbsp;</a></span>Lookup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float fam::Fam::Lookup </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>table_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>lookup</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>breakpoints</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab5b0347e05576acc1b2c8c70c985abc1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab5b0347e05576acc1b2c8c70c985abc1">&#9670;&nbsp;</a></span>ReadParams()</h2>
 
@@ -291,6 +543,48 @@ Protected Attributes</h2></td></tr>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6f0a4e2184d59ca473502ac9a3f1e5b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f0a4e2184d59ca473502ac9a3f1e5b6">&#9670;&nbsp;</a></span>RunFam()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fam::Fam::RunFam </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structfam_1_1FamInput.html">FamInput</a> &amp;&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>speed_cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::Matrix&lt; float, 12, 1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>servo_pwm_cmd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -336,9 +630,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a743f5e9f3dc49e98e0e3a46c96ef5aa6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a743f5e9f3dc49e98e0e3a46c96ef5aa6">&#9670;&nbsp;</a></span>center_of_mass_</h2>
+<a id="aa0a60583a201702b1e1b94c028898229"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0a60583a201702b1e1b94c028898229">&#9670;&nbsp;</a></span>TestTwoVectors()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -347,7 +640,192 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">geometry_msgs::Vector3 fam::Fam::center_of_mass_</td>
+          <td class="memname">void fam::Fam::TestTwoVectors </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::Matrix&lt; float, 6, 1 &gt;&#160;</td>
+          <td class="paramname"><em>new_array</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>old_array</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>tolerance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8dfed7bc931022ca82edf72b9f3bbca5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dfed7bc931022ca82edf72b9f3bbca5">&#9670;&nbsp;</a></span>UpdateCOM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fam::Fam::UpdateCOM </td>
+          <td>(</td>
+          <td class="paramtype">const Eigen::Vector3f &amp;&#160;</td>
+          <td class="paramname"><em>com</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad4f87dcddc342659425c41d011f9cc08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4f87dcddc342659425c41d011f9cc08">&#9670;&nbsp;</a></span>abp_PM1_nozzle_orientations</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Matrix&lt;float, 6, 3&gt; fam::Fam::abp_PM1_nozzle_orientations</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7596d283b30c8cda296f8ae3ce595573"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7596d283b30c8cda296f8ae3ce595573">&#9670;&nbsp;</a></span>abp_PM1_P_nozzle_B_B</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Matrix&lt;float, 6, 3&gt; fam::Fam::abp_PM1_P_nozzle_B_B</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5da543fd7f2e7e587d7b861586c11f1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5da543fd7f2e7e587d7b861586c11f1e">&#9670;&nbsp;</a></span>abp_PM2_nozzle_orientations</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Matrix&lt;float, 6, 3&gt; fam::Fam::abp_PM2_nozzle_orientations</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a002c4530f46c5cf0e107740f92fad1bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a002c4530f46c5cf0e107740f92fad1bb">&#9670;&nbsp;</a></span>abp_PM2_P_nozzle_B_B</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Matrix&lt;float, 6, 3&gt; fam::Fam::abp_PM2_P_nozzle_B_B</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad9b4845d3e2a2ae26dca7397c388cc00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9b4845d3e2a2ae26dca7397c388cc00">&#9670;&nbsp;</a></span>center_of_mass_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Vector3f fam::Fam::center_of_mass_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a483abf91e7dad70d834dbf2189510d36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a483abf91e7dad70d834dbf2189510d36">&#9670;&nbsp;</a></span>compare_fam_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool fam::Fam::compare_fam_</td>
         </tr>
       </table>
   </td>
@@ -447,6 +925,28 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ab5f4c990496e1cffdbe506154a805148"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5f4c990496e1cffdbe506154a805148">&#9670;&nbsp;</a></span>forcetorque2thrust_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Matrix&lt;float, 12, 6&gt; fam::Fam::forcetorque2thrust_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a8b2c66fd24aba28e9c57c5eac081ceb5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8b2c66fd24aba28e9c57c5eac081ceb5">&#9670;&nbsp;</a></span>gnc_</h2>
 
@@ -458,6 +958,28 @@ Protected Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classgnc__autocode_1_1GncFamAutocode.html">gnc_autocode::GncFamAutocode</a> fam::Fam::gnc_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf13358001cd55377ade3ec4c7dbf6da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf13358001cd55377ade3ec4c7dbf6da">&#9670;&nbsp;</a></span>IMPELLER_SPEEDS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float fam::Fam::IMPELLER_SPEEDS[3] = {2000 * 2 * M_PI / 60, 2500 * 2 * M_PI / 60, 2800 * 2 * M_PI / 60}</td>
         </tr>
       </table>
   </td>
@@ -502,6 +1024,28 @@ Protected Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">ros::Subscriber fam::Fam::inertia_sub_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d14b3201d942e2ccb2e3b2939ebea7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d14b3201d942e2ccb2e3b2939ebea7e">&#9670;&nbsp;</a></span>input_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structfam_1_1FamInput.html">FamInput</a> fam::Fam::input_</td>
         </tr>
       </table>
   </td>
@@ -612,6 +1156,138 @@ Protected Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">uint8_t fam::Fam::speed_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afcb6a546316e161c2641391bafde58c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcb6a546316e161c2641391bafde58c4">&#9670;&nbsp;</a></span>thrust2force_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Matrix&lt;float, 3, 12&gt; fam::Fam::thrust2force_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a96b8a8d2904674563523d0a4f9751194"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96b8a8d2904674563523d0a4f9751194">&#9670;&nbsp;</a></span>thrust2torque_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Matrix&lt;float, 3, 12&gt; fam::Fam::thrust2torque_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae2ece413ee6efe9b961ead762364bebd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2ece413ee6efe9b961ead762364bebd">&#9670;&nbsp;</a></span>THRUST_LOOKUP_BREAKPOINTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float fam::Fam::THRUST_LOOKUP_BREAKPOINTS[316]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab66cb3aca8cb82fd09b81fb6ffd9ee46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab66cb3aca8cb82fd09b81fb6ffd9ee46">&#9670;&nbsp;</a></span>THRUST_LOOKUP_CDP</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float fam::Fam::THRUST_LOOKUP_CDP[316]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3b4b5850dd021e614d4c6aedcdec10b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3b4b5850dd021e614d4c6aedcdec10b">&#9670;&nbsp;</a></span>THRUST_LOOKUP_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int fam::Fam::THRUST_LOOKUP_SIZE = 316</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac1eaa084ca66bce493254697ef4267d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1eaa084ca66bce493254697ef4267d0">&#9670;&nbsp;</a></span>use_old_fam_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool fam::Fam::use_old_fam_</td>
         </tr>
       </table>
   </td>
