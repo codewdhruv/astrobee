@@ -93,11 +93,11 @@ $(document).ready(function(){initNavTree('picoflexx_python.html',''); initResiza
 <div class="contents">
 <div class="textblock"><p>These Python utilities enable us to process logged <code>ff_msgs/PicoflexxIntermediateData</code> messages on the <code>/hw/depth_haz/extended</code> topic and split the data to regenerate both point cloud messages normally logged on the <code>/hw/depth_haz/points</code> topic and amplitude image messages logged on the <code>/hw/depth_haz/extended/amplitude_int</code> topic. (Those are the HazCam-specific topics; to use PerchCam, specify <code>--cam=perch</code>.)</p>
 <p>As a result, once these tools are fully validated, we will no longer need to log the latter two topics, providing a major savings in data volume. To quantify the impact, we studied the longest <code>delayed</code> bag from the SoundSee-Data-3 Astrobee ISS activity, running an ISAAC-style survey. Out of a total bag size of 20.9 GB, the top four messages by data volume were NavCam images (8.6 GB), HazCam point clouds (6.3 GB), HazCam extended messages (5.0 GB), and HazCam amplitude images (0.6 GB). By no longer logging point clouds and amplitude images, we could save up to 6.9 GB (33%). These savings impact not just storage space on the Astrobee MLP but also CPU load required to log the data, which experience shows can be significant.</p>
-<h2><a class="anchor" id="autotoc_md217"></a>
+<h2><a class="anchor" id="autotoc_md215"></a>
 System requirements and installation</h2>
 <p>So far, these tools were tested only under Ubuntu 18.04 and Python 2.7 on the host astrobeast.ndc.nasa.gov. This host already had the necessary dependencies pre-installed by the admins in the ARC-TI Systems Group, so no installation steps were needed, other than checking out the scripts from the repository.</p>
 <p>Some minor changes would probably be needed to support Python 3.x. If the tools will be used on other hosts that aren't pre-configured, this section should be expanded to document how to install the dependencies.</p>
-<h2><a class="anchor" id="autotoc_md218"></a>
+<h2><a class="anchor" id="autotoc_md216"></a>
 Usage</h2>
 <p>Using these tools is a two-step process:</p>
 <ol type="1">
@@ -112,7 +112,7 @@ $scripts/pico_write_xyz_coeff.py $inbag bumble_haz_xyz_coeff.npy
 $scripts/pico_split_extended.py $inbag bumble_haz_xyz_coeff.npy haz_split.bag
 $scripts/pico_check_split_extended.py $inbag haz_split.bag
 </pre><p>And this example excerpts the one step needed in production: </p><pre class="fragment">$scripts/pico_split_extended.py $inbag bumble_xyz_coeff.npy haz_split.bag
-</pre><h2><a class="anchor" id="autotoc_md219"></a>
+</pre><h2><a class="anchor" id="autotoc_md217"></a>
 Getting valid xyz coefficients</h2>
 <p>A file of xyz coefficients is required to recover point clouds from extended messages.</p>
 <p>Using the pico_write_xyz_coeff.py script, the xyz coefficients are effectively derived from the camera intrinsic parameters stored in the camera firmware. These parameters are unique to each Pico Flexx serial number and calibrated at the factory. By convention, when saving the coefficients, the output file name should document which robot and which camera (haz or perch) the coefficients are for. During reconstruction, be careful to use the correct coefficients file for your robot and camera.</p>

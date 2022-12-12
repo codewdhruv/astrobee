@@ -91,26 +91,26 @@ $(document).ready(function(){initNavTree('adding_a_command.html',''); initResiza
 <div class="title">Adding a ground command to the Astrobee FSW </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="autotoc_md93"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md91"></a>
 Introduction</h1>
 <p>Adding a ground command to the flight software is a pretty involved task so please make sure you have a full understanding of the system before you attempt it. There are four parts to adding a command: adding the command to the command spreedsheet, adding the command to the plan schema, generating the fsw and Android files, and adding the command to the executive. Please make sure to complete all four parts to ensure your command is fully intergrated into the system.</p>
-<h1><a class="anchor" id="autotoc_md94"></a>
+<h1><a class="anchor" id="autotoc_md92"></a>
 Update the Commands Spreadsheet</h1>
 <p>The command spreadsheet can be found in freeflyer_docs/FlightSoftware and is named commands.xml. This spreadsheet keeps track of the ground commands the fsw accepts, which commands can run while other commands are running, the operating and mobility states the commands are accepted in, whether the command is accept in a plan or not, and the status of the command in the fsw. Please make sure to add your command to each of the relevant sheets. If you have questions, please contact Katie Hamilton.</p>
-<h1><a class="anchor" id="autotoc_md95"></a>
+<h1><a class="anchor" id="autotoc_md93"></a>
 Add Command to the Plan Schema</h1>
 <p>The plan schema can be found in astrobee/commands. Please add your command to the freeFlyerPlanSchema.json file. Make sure to follow the json format for a command.</p>
-<h1><a class="anchor" id="autotoc_md96"></a>
+<h1><a class="anchor" id="autotoc_md94"></a>
 File Generation</h1>
 <p>When adding a command, some fsw and GDS files need to be updated. There are scripts that will update everything for you. After adding your command to the plan schema, please follow the next three subsections to generate the files.</p>
-<h2><a class="anchor" id="autotoc_md97"></a>
+<h2><a class="anchor" id="autotoc_md95"></a>
 Setup</h2>
 <p>The scripts for auto-generating source code files from the command dictionary depend on the <code>xgds_planner2</code> library, which can be installed as follows: </p><pre class="fragment">sudo pip install git+https://github.com/trey0/xgds_planner2.git@just_xpjson
-</pre><h2><a class="anchor" id="autotoc_md98"></a>
+</pre><h2><a class="anchor" id="autotoc_md96"></a>
 Generate FSW files</h2>
 <p>To generate the fsw files and copy them to correct location, please run the following line from the top level directory of astrobee: </p><pre class="fragment">./scripts/build/processCommandSchema.sh
 </pre><p>After running this script, please make sure your changes compile. To do this, navigate to the folder you build the fsw in, rebuild the cache, and then compile the code. Don't forget to commit and push your changes. If you want your command incorporated into GDS, please let whoever is in charge of GDS know that the command constants idl has changed.</p>
-<h2><a class="anchor" id="autotoc_md99"></a>
+<h2><a class="anchor" id="autotoc_md97"></a>
 Generate Android files</h2>
 <p>Make sure you have the Astrobee Android repo. If you don't, please see the install instructions on how to get it. Navigate to the astrobee api scripts folder in the astrobee Android repo (astrobee_api/scripts). These scripts assume that the android repo is located in the fsw submodules folder. If it is located outside of the fsw, please set the $SOURCE_PATH environment variable to the fsw location. Also if you added a new enum command type, you will need to add an include line to both the genBaseRobot and genBaseRobotImpl scripts. To generate the android files, please run the following in the scripts folder: </p><pre class="fragment">cd astrobee_api/scripts
 # if needed, set the source path
@@ -119,7 +119,7 @@ export SOURCE_PATH=path/to/astrobee
 </pre><p>The script will copy the generated files to the correct locations. Please make sure that the astrobee_api builds with no errors. To do this, go to the top level astrobee api directory and build the code: </p><pre class="fragment">cd astrobee_api/
 ./gradlew build
 </pre><p>Once everything compiles, make sure you commit and push your changes.</p>
-<h1><a class="anchor" id="autotoc_md100"></a>
+<h1><a class="anchor" id="autotoc_md98"></a>
 Add to Executive</h1>
 <p>The last step is to add the command to the executive. Please make sure you have a full understanding of the executive and operating state classes before adding the command. If you have questions, please contact Katie Hamilton. </p>
 </div></div><!-- contents -->
