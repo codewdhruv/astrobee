@@ -102,7 +102,7 @@ Inheritance diagram for perch::PerchNodelet:</div>
 <div class="dyncontent">
 <div class="center"><img src="classperch_1_1PerchNodelet__inherit__graph.png" border="0" usemap="#perch_1_1PerchNodelet_inherit__map" alt="Inheritance graph"/></div>
 <map name="perch_1_1PerchNodelet_inherit__map" id="perch_1_1PerchNodelet_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,520,228,1052"/>
+<area shape="rect" title=" " alt="" coords="5,520,228,1037"/>
 <area shape="rect" href="classff__util_1_1FreeFlyerNodelet.html" title=" " alt="" coords="27,131,206,472"/>
 <area shape="rect" title=" " alt="" coords="51,5,182,83"/>
 </map>
@@ -276,10 +276,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a8f88bb4534a8d59e369f85e5121d865b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48bf4e419fed18d578e1f9d95fb854f1"><td class="memItemLeft" align="right" valign="top">ros::ServiceClient&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperch_1_1PerchNodelet.html#a48bf4e419fed18d578e1f9d95fb854f1">client_service_hr_reset_</a></td></tr>
 <tr class="separator:a48bf4e419fed18d578e1f9d95fb854f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd907ed01346326400f847d9674d2f75"><td class="memItemLeft" align="right" valign="top">Eigen::Quaterniond&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperch_1_1PerchNodelet.html#abd907ed01346326400f847d9674d2f75">approach_orientation_</a></td></tr>
-<tr class="separator:abd907ed01346326400f847d9674d2f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a280f4d24ad0f33d09cfae235e9fd6f53"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperch_1_1PerchNodelet.html#a280f4d24ad0f33d09cfae235e9fd6f53">approach_position_</a></td></tr>
-<tr class="separator:a280f4d24ad0f33d09cfae235e9fd6f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a018a78659fb9e6be5b75948999c0eea6"><td class="memItemLeft" align="right" valign="top">geometry_msgs::Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperch_1_1PerchNodelet.html#a018a78659fb9e6be5b75948999c0eea6">approach_pose_</a></td></tr>
+<tr class="separator:a018a78659fb9e6be5b75948999c0eea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac054b16fce5218ff8003bee62984db79"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperch_1_1PerchNodelet.html#ac054b16fce5218ff8003bee62984db79">err_</a></td></tr>
 <tr class="separator:ac054b16fce5218ff8003bee62984db79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefd55deaff09f39806ba0881fd1846b0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classperch_1_1PerchNodelet.html#aefd55deaff09f39806ba0881fd1846b0">err_msg_</a></td></tr>
@@ -1082,8 +1080,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="abd907ed01346326400f847d9674d2f75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd907ed01346326400f847d9674d2f75">&#9670;&nbsp;</a></span>approach_orientation_</h2>
+<a id="a018a78659fb9e6be5b75948999c0eea6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a018a78659fb9e6be5b75948999c0eea6">&#9670;&nbsp;</a></span>approach_pose_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1092,29 +1090,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Quaterniond perch::PerchNodelet::approach_orientation_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a280f4d24ad0f33d09cfae235e9fd6f53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a280f4d24ad0f33d09cfae235e9fd6f53">&#9670;&nbsp;</a></span>approach_position_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Eigen::Vector3d perch::PerchNodelet::approach_position_</td>
+          <td class="memname">geometry_msgs::Transform perch::PerchNodelet::approach_pose_</td>
         </tr>
       </table>
   </td>

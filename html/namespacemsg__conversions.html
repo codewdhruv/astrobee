@@ -130,6 +130,16 @@ Functions</h2></td></tr>
 <tr class="separator:ad152aa53d315553b9af4fd6f54814d0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6feec0f5a6c981890e0f3568f1c9999"><td class="memItemLeft" align="right" valign="top">Eigen::Affine3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemsg__conversions.html#ae6feec0f5a6c981890e0f3568f1c9999">ros_to_eigen_transform</a> (const geometry_msgs::Transform &amp;p)</td></tr>
 <tr class="separator:ae6feec0f5a6c981890e0f3568f1c9999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6de431b954bc19317a308adf8ee20dfd"><td class="memItemLeft" align="right" valign="top">geometry_msgs::Pose&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemsg__conversions.html#a6de431b954bc19317a308adf8ee20dfd">ros_transform_to_ros_pose</a> (const geometry_msgs::Transform &amp;p)</td></tr>
+<tr class="separator:a6de431b954bc19317a308adf8ee20dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1ca4a8ee9fbd12242b10b0978e8717d"><td class="memItemLeft" align="right" valign="top">geometry_msgs::Quaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemsg__conversions.html#ae1ca4a8ee9fbd12242b10b0978e8717d">tf2_quat_to_ros_quat</a> (const tf2::Quaternion &amp;q)</td></tr>
+<tr class="separator:ae1ca4a8ee9fbd12242b10b0978e8717d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45d32f61f9addee422fcae3b970bfd5d"><td class="memItemLeft" align="right" valign="top">geometry_msgs::Pose&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemsg__conversions.html#a45d32f61f9addee422fcae3b970bfd5d">tf2_transform_to_ros_pose</a> (const tf2::Transform &amp;p)</td></tr>
+<tr class="separator:a45d32f61f9addee422fcae3b970bfd5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7004f1016bf1db7cd182772eeb870a5f"><td class="memItemLeft" align="right" valign="top">tf2::Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemsg__conversions.html#a7004f1016bf1db7cd182772eeb870a5f">ros_tf_to_tf2_transform</a> (const geometry_msgs::Transform &amp;p)</td></tr>
+<tr class="separator:a7004f1016bf1db7cd182772eeb870a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21735be617bdab5549d37613e353d2bf"><td class="memItemLeft" align="right" valign="top">tf2::Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemsg__conversions.html#a21735be617bdab5549d37613e353d2bf">ros_pose_to_tf2_transform</a> (const geometry_msgs::Pose &amp;p)</td></tr>
+<tr class="separator:a21735be617bdab5549d37613e353d2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54a311e111642e2fbf2f155cef45f045"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemsg__conversions.html#a54a311e111642e2fbf2f155cef45f045">config_read_quat</a> (<a class="el" href="classconfig__reader_1_1ConfigReader.html">config_reader::ConfigReader</a> *config, const char *<a class="el" href="eps__simulator_8cc.html#a9b45b3e13bd9167aab02e17e08916231">name</a>, Eigen::Quaterniond *quat)</td></tr>
 <tr class="separator:a54a311e111642e2fbf2f155cef45f045"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0d1de67266a57e9b3d52f100dd6a5c6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacemsg__conversions.html#ac0d1de67266a57e9b3d52f100dd6a5c6">config_read_vector</a> (<a class="el" href="classconfig__reader_1_1ConfigReader.html">config_reader::ConfigReader</a> *config, const char *<a class="el" href="eps__simulator_8cc.html#a9b45b3e13bd9167aab02e17e08916231">name</a>, Eigen::Vector3d *vec)</td></tr>
@@ -1205,6 +1215,42 @@ template&lt;typename ArrayType &gt; </div>
 
 </div>
 </div>
+<a id="a21735be617bdab5549d37613e353d2bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21735be617bdab5549d37613e353d2bf">&#9670;&nbsp;</a></span>ros_pose_to_tf2_transform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tf2::Transform msg_conversions::ros_pose_to_tf2_transform </td>
+          <td>(</td>
+          <td class="paramtype">const geometry_msgs::Pose &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7004f1016bf1db7cd182772eeb870a5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7004f1016bf1db7cd182772eeb870a5f">&#9670;&nbsp;</a></span>ros_tf_to_tf2_transform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tf2::Transform msg_conversions::ros_tf_to_tf2_transform </td>
+          <td>(</td>
+          <td class="paramtype">const geometry_msgs::Transform &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a72167a7df37ef16e5c9d1256c63981b0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a72167a7df37ef16e5c9d1256c63981b0">&#9670;&nbsp;</a></span>ros_to_array_point()</h2>
 
@@ -1343,6 +1389,24 @@ template&lt;typename ArrayType &gt; </div>
 
 </div>
 </div>
+<a id="a6de431b954bc19317a308adf8ee20dfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6de431b954bc19317a308adf8ee20dfd">&#9670;&nbsp;</a></span>ros_transform_to_ros_pose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">geometry_msgs::Pose msg_conversions::ros_transform_to_ros_pose </td>
+          <td>(</td>
+          <td class="paramtype">const geometry_msgs::Transform &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a87a38da8a37b0683af271facfe14f4ff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a87a38da8a37b0683af271facfe14f4ff">&#9670;&nbsp;</a></span>RotationFromMsg()</h2>
 
@@ -1404,6 +1468,42 @@ template&lt;typename RotationType , typename MsgRotationType &gt; </div>
           <td>(</td>
           <td class="paramtype">const std::initializer_list&lt; bool &gt; &amp;&#160;</td>
           <td class="paramname"><em>bools</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1ca4a8ee9fbd12242b10b0978e8717d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1ca4a8ee9fbd12242b10b0978e8717d">&#9670;&nbsp;</a></span>tf2_quat_to_ros_quat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">geometry_msgs::Quaternion msg_conversions::tf2_quat_to_ros_quat </td>
+          <td>(</td>
+          <td class="paramtype">const tf2::Quaternion &amp;&#160;</td>
+          <td class="paramname"><em>q</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a45d32f61f9addee422fcae3b970bfd5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45d32f61f9addee422fcae3b970bfd5d">&#9670;&nbsp;</a></span>tf2_transform_to_ros_pose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">geometry_msgs::Pose msg_conversions::tf2_transform_to_ros_pose </td>
+          <td>(</td>
+          <td class="paramtype">const tf2::Transform &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
