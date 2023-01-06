@@ -120,6 +120,7 @@ var NAVTREE =
     [ "Tutorials", "md_doc_general_documentation_astrobee_usage.html", "md_doc_general_documentation_astrobee_usage" ],
     [ "Command Dictionary", "command_dictionary.html", null ],
     [ "Subsystems", "subsystems.html", "subsystems" ],
+    [ "Propulsion System", "pmc.html", null ],
     [ "Free Flyer ROS Messages", "ff_msgs.html", null ],
     [ "Ground DDS ROS Bridge", "ground_dds_ros_bridge.html", [
       [ "Configuration", "ground_dds_ros_bridge.html#autotoc_md251", [
@@ -140,7 +141,7 @@ var NAVTREEINDEX =
 "access_control.html",
 "import_map.html#autotoc_md407",
 "md_RELEASE.html#autotoc_md63",
-"temp_monitor.html"
+"teleop.html#autotoc_md498"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
