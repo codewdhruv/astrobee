@@ -87,3 +87,8 @@ pipeline:
                   spec:
                     shell: Sh
                     command: docker build . -f ./scripts/docker/test_astrobee_melodic.Dockerfile -t test
+                  when:
+                    stageStatus: All
+                  failureStrategies: []
+        when:
+          pipelineStatus: All
