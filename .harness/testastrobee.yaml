@@ -47,3 +47,6 @@ pipeline:
                   spec:
                     shell: Sh
                     command: docker build . -f ./scripts/docker/test_astrobee_kinetic.Dockerfile -t test
+                  when:
+                    stageStatus: All
+                  failureStrategies: []
