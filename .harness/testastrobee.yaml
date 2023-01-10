@@ -14,7 +14,6 @@ pipeline:
     - stage:
         name: build_kinetic
         identifier: build_kinetic
-        description: ""
         type: CI
         spec:
           cloneCodebase: true
@@ -50,6 +49,8 @@ pipeline:
                   when:
                     stageStatus: All
                   failureStrategies: []
+          sharedPaths:
+            - scripts/
     - stage:
         name: build-melodic
         identifier: buildmelodic
