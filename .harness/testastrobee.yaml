@@ -12,8 +12,8 @@ pipeline:
         build: <+input>
   stages:
     - stage:
-        name: Docker Image CI
-        identifier: Docker_Image_CI
+        name: build_kinetic
+        identifier: build_kinetic
         description: ""
         type: CI
         spec:
