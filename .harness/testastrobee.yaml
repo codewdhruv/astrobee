@@ -1,0 +1,49 @@
+pipeline:
+  name: test-astrobee
+  identifier: testastrobee
+  projectIdentifier: DhrubaCI
+  orgIdentifier: default
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: dhrubaaccountconnector
+        repoName: astrobee
+        build: <+input>
+  stages:
+    - stage:
+        name: Docker Image CI
+        identifier: Docker_Image_CI
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  type: Run
+                  name: Checkout submodule
+                  identifier: Checkout_submodule
+                  spec:
+                    shell: Sh
+                    command: git submodule update --init --depth 1 description/media
+              - step:
+                  type: Run
+                  name: Build code for Ubuntu 16
+                  identifier: Build_code_for_Ubuntu_16
+                  spec:
+                    shell: Sh
+                    command: docker build . -f ./scripts/docker/astrobee_kinetic.Dockerfile -t astrobee/astrobee:latest-kinetic
+              - step:
+                  type: Run
+                  name: Test code
+                  identifier: Test_code
+                  spec:
+                    shell: Sh
+                    command: docker build . -f ./scripts/docker/test_astrobee_kinetic.Dockerfile -t test
