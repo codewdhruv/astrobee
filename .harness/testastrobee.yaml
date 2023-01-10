@@ -17,13 +17,6 @@ pipeline:
         type: CI
         spec:
           cloneCodebase: true
-          infrastructure:
-            type: VM
-            spec:
-              type: Pool
-              spec:
-                poolName: aws-linux-amd64-harsh
-                os: Linux
           execution:
             steps:
               - step:
@@ -36,5 +29,11 @@ pipeline:
                       chmod 777 ./scripts/docker/build.sh
                       ./scripts/docker/build.sh --bionic --remote astrobee test_astrobee
                   failureStrategies: []
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
         strategy:
           parallelism: 1
