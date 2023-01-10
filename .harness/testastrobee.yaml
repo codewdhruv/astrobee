@@ -50,7 +50,7 @@ pipeline:
                     stageStatus: All
                   failureStrategies: []
           sharedPaths:
-            - scripts/
+            - /scripts
     - stage:
         name: build-melodic
         identifier: buildmelodic
