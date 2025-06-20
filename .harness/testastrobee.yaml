@@ -27,8 +27,8 @@ pipeline:
                   spec:
                     shell: Bash
                     command: |-
-                      chmod 777 ./scripts/docker/build.sh
-                      ./scripts/docker/run.sh --remote
+                      chmod +x scripts/docker/build.sh
+                      ./scripts/docker/build.sh
           platform:
             os: Linux
             arch: Amd64
