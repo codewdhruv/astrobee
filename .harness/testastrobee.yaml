@@ -28,7 +28,7 @@ pipeline:
                     shell: Bash
                     command: |-
                       chmod 777 ./scripts/docker/build.sh
-                      ./scripts/docker/build.sh --remote astrobee test_astrobee
+                      ./scripts/docker/run.sh --remote
           platform:
             os: Linux
             arch: Amd64
