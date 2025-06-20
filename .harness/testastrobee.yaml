@@ -8,7 +8,7 @@ pipeline:
     ci:
       codebase:
         connectorRef: spahujarepos
-        repoName: astrobee
+        repoName: go-ethereum
         build: <+input>
         sparseCheckout: []
   stages:
@@ -26,9 +26,7 @@ pipeline:
                   identifier: RunStep
                   spec:
                     shell: Bash
-                    command: |-
-                      chmod +x scripts/docker/build.sh
-                      ./scripts/docker/build.sh
+                    command: make all
           platform:
             os: Linux
             arch: Amd64
