@@ -28,6 +28,9 @@ pipeline:
                     shell: Bash
                     command: |-
                       chmod +x scripts/docker/build.sh
+                      RUN apt-get update && apt-get install -y \
+                          ros-noetic-ar-track-alvar-msgs
+                          
                       ./scripts/docker/build.sh
           platform:
             os: Linux
