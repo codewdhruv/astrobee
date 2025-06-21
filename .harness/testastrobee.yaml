@@ -43,3 +43,9 @@ pipeline:
             spec: {}
         strategy:
           parallelism: 1
+        variables:
+          - name: CI_ENABLE_BARE_METAL
+            type: String
+            description: ""
+            required: false
+            value: "false"
